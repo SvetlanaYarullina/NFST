@@ -1,4 +1,21 @@
-header {
-  height: 100px;
-  background-color: red;
+.header-nav {
+  background-color: #040B3C;
+  ;
+}
+
+.header-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 53px;
+
+
+  @include min-tablet {
+    height: 118px;
+  }  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
