@@ -1,6 +1,8 @@
+.header {
+  color: $white;
+}
 .header-nav {
   background-color: #040B3C;
-  ;
 }
 
 .header-nav__wrapper {
@@ -9,13 +11,117 @@
   padding: 0 16px;
   height: 53px;
 
-
   @include min-tablet {
     height: 118px;
+    max-width: 1170px;
+    margin: 0 auto;
   }  
 }
 
 .logo {
   display: flex;
   align-items: center;
+}
+
+.header-banner__wrapper {
+  height: 540px;
+  background-image: url("/src/images/bg-banner_mobile.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+
+  @include min-tablet {
+    background-image: none;
+  }
+}
+
+.header-info {
+  @include min-tablet {
+    background-image: url("/src/images/bg-banner_desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.header-banner__logo {
+  display: block;
+  margin-top: 36px;
+
+  @include min-tablet {
+    margin-top: 16px;
+  }  
+}
+
+.header-banner__title {
+  max-width: 500px;
+  margin-top: 17px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  @include min-tablet {
+    margin-top: 15px;
+    font-size: 24px;
+    line-height: 28px;
+  } 
+  
+}
+
+.header-banner__description {
+  max-width: 500px;
+  margin-top: 14px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+
+  @include min-tablet {
+    margin-top: 21px;
+    font-size: 24px;
+    line-height: 28px;
+  } 
+}
+
+.header-banner__datetime {
+  display: flex;
+  margin-top: 29px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  @include min-tablet {
+    margin-top: 55px;
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+
+.header-banner__date {
+  margin-right: 27px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    margin-left: 204px;
+    height: 30px;
+    border-left: 3px solid #F6255A;
+    
+    @include min-tablet {
+      margin-left: 306px;
+      height: 48px;
+    }
+  }
+
+  @include min-tablet {
+    margin-right: 51px;
+  }
+}
+
+.header-banner__button {
+  margin-top: 31px;
+
+  @include min-tablet {
+    margin-top: 57px;
+  }
 }

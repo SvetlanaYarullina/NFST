@@ -2,206 +2,229 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NFST</title>
-  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFST</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
 </head>
 
 <body>
-  <header class="header">
-    <section class="header-nav">
-        <div class="header-nav__wrapper">
-            <a class="header-nav__logo logo">
-                <picture>
-                    <source media="(min-width: 1200px)" srcset="/src/images/logo-desktop.svg">
-                    <img src="/src/images/logo-mobile.svg" width="81" height="29" alt="Logo NFST">
-                </picture>
-            </a>
-            <nav class="main-nav main-nav--closed main-nav--nojs">
-                <button class="main-nav__toggle" type="button">
-                    <span class="visually-hidden">Открыть меню</span>
-                </button>
-                <div class="main-nav__wrapper col-lg-3">
-                    <ul class="main-nav__list site-list">
-                        <li class="site-list__item">
-                            <a href="tel:+7(812)4244647">
-                                8 <span>(812)</span> 424 46 47
-                            </a>
+    <header class="header">
+        <section class="header-nav">
+            <div class="header-nav__wrapper">
+                <a class="header-nav__logo logo">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="/src/images/logo-desktop.svg" width="171">
+                        <img src="/src/images/logo-mobile.svg" width="81" height="29" alt="Logo NFST">
+                    </picture>
+                </a>
+                <nav class="main-nav main-nav--closed main-nav--nojs">
+                    <button class="main-nav__toggle" type="button">
+                        <span class="visually-hidden">Открыть меню</span>
+                    </button>
+                    <div class="main-nav__wrapper col-lg-3">
+                        <ul class="main-nav__list site-list">
+                            <li class="site-list__item">
+                                <a href="tel:+7(812)4244647">
+                                    8 <span>(812)</span> 424 46 47
+                                </a>
+                            </li>
+                            <li class="site-list__item">
+                                <a href="mailto:info@gostonomica.ru">
+                                    <span>info@</span>gostonomica.ru
+                                </a>
+                            </li>
+                            <li class="site-list__item">
+                                <a class="site-list__login js-login" href="login.html">
+                                    Зарегистроваться
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="container-xs header-info">
+            <section class="header-banner">
+                <div class="header-banner__wrapper">
+                    <a class="header-banner__logo">
+                        <picture>
+                            <source media="(min-width: 1200px)" width="730" srcset="/src/images/banner_img_desktop.png">
+                            <img src="/src/images/banner_img_mobile.png" width="260" alt="Logo NFST">
+                        </picture>
+                    </a>
+                    <div class="header-banner__title">Научно-образовательная конференция по&nbsp;стандартизации
+                        и&nbsp;НСИ</div>
+                    <div class="header-banner__description">National forum of&nbsp;standards
+                        &amp;&nbsp;technology&rsquo;s</div>
+                    <div class="header-banner__datetime">
+                        <div class="header-banner__date">14-15 сентября</div>
+                        <span>10:00</span>
+                    </div>
+                    <a class="header-banner__button button__registration">Зарегистрироваться</a>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="advantages__wrapper">
+                    <div class="advantages__title title">Вам подойдет эта программа если у&nbsp;вас есть большая цель
+                        и&nbsp;вы&nbsp;хотите</div>
+                    <div class="advantages__list">
+                        <div class="row">
+                            <div class="advantages__item col-lg-2">
+                                <div class="advantages__icon"></div>
+                                <div class="advantages__text">Обзавестись новыми полезными связями</div>
+                            </div>
+                            <div class="advantages__item col-lg-2">
+                                <div class="advantages__icon"></div>
+                                <div class="advantages__text">Разобраться что такое цифровой стандарт</div>
+                            </div>
+                            <div class="advantages__item col-lg-2">
+                                <div class="advantages__icon"></div>
+                                <div class="advantages__text">Узнать об&nbsp;интеграции стандартов
+                                    с&nbsp;производственными процессами</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="advantages__item col-lg-2">
+                                <div class="advantages__icon"></div>
+                                <div class="advantages__text">Ознакомиться с&nbsp;новыми технологиями зарубежных
+                                    стандартизаторов</div>
+                            </div>
+                            <div class="advantages__item col-lg-2">
+                                <div class="advantages__icon"></div>
+                                <div class="advantages__text">Увидеть цифровой конструктор стандартов</div>
+                            </div>
+                            <div class="advantages__item col-lg-2">
+                                <div class="advantages__icon"></div>
+                                <div class="advantages__text">Понять роль технологий в&nbsp;&laquo;Бережливом
+                                    производстве&raquo;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </header>
+    <main class="main">
+        <svg width="164" height="12" aria-hidden="true">
+            <use xlink:href="#icon-email"></use>
+        </svg>
+        <section class="location">
+            <div class="location__wrapper">
+                <div class="location__title title">Место проведения конференции</div>
+                <div class="location-section">
+                    <div class="location-section__wrapper">
+                        <div class="location-section__info">
+                            <div class="location-section__text">
+                                <p>NFST 2021 было решено организовать в&nbsp;грандиозном месте&nbsp;&mdash;
+                                    ультрасовременном архитектурном комплексе стеклянных небоскребов &laquo;Москва
+                                    Сити&raquo;.</p>
+                                <p>Деловой центр совмещает в&nbsp;себе интересы российских и&nbsp;зарубежных компаний.
+                                    В&nbsp;нем пересекаются комфорт и&nbsp;роскошь, бизнес и&nbsp;развлечения, уют
+                                    и&nbsp;бурная жизнь мегаполиса. </p>
+                                <p>Уверены, что атмосфера придется каждому по&nbsp;душе</p>
+                            </div>
+                            <a class="location-section__button button__registration">Зарегистрироваться</a>
+                        </div>
+                        <div class="location-section__slider"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prev-conferences">
+            <div class="prev-conferences__wrapper">
+                <div class="prev-conferences__title title">Предыдущие конференции</div>
+            </div>
+            <div class="prev-conferences__slider">
+            </div>
+        </section>
+        <section class="faq">
+            <div class="faq__wrapper">
+                <div class="faq__title title">FAQs</div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer-contacts">
+                <a class="footer-contacts__logo logo"></a>
+                <p class="footer-contacts__adress">Санкт-Петербург, Краснопутиловская ул., 69</p>
+                <div class="footer-contacts__social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link social__link--instagram"
+                                href="https://www.instagram.com/htmlacademy">Мы&nbsp;в
+                                Инстаграме</a>
                         </li>
-                        <li class="site-list__item">
-                            <a href="mailto:info@gostonomica.ru">
-                                <span>info@</span>gostonomica.ru
-                            </a>
+                        <li class="social__item">
+                            <a class="social__link social__link--facebook"
+                                href="https://www.facebook.com/htmlacademy">Мы&nbsp;в
+                                Фейсбуке</a>
                         </li>
-                        <li class="site-list__item">
-                            <a class="site-list__login js-login" href="login.html">
-                                Зарегистроваться
-                            </a>
+                        <li class="social__item">
+                            <a class="social__link social__link--youtube"
+                                href="https://www.instagram.com/htmlacademy">Мы&nbsp;в
+                                Ютубе</a>
                         </li>
                     </ul>
                 </div>
-            </nav>
+                <p class="copyright copyright--desktop">Все права защищены<br>
+                    <span>&copy;&nbsp;2019&nbsp;АНО &laquo;Интепром Стандарт&raquo;</span>
+                </p>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__title">Контакты</li>
+                    <li class="footer-nav__item"><a href="tel:+7(812)4244647">+7 (812) 424 46 47</a></li>
+                    <li class="footer-nav__item"><a href="mailto:info@gostonomica.ru">info@gostonomica.ru</a></li>
+                </ul>
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__title">Документы</li>
+                    <li class="footer-nav__item"><a href="#">Политика конфиденциальности</a></li>
+                    <li class="footer-nav__item"><a href="#">Документ &#8470;&nbsp;1</a></li>
+                    <li class="footer-nav__item"><a href="#">Документ &#8470;&nbsp;2</a></li>
+                </ul>
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__title">Навигация по&nbsp;сайту</li>
+                    <li class="footer-nav__item"><a href="#">О&nbsp;конференции</a></li>
+                    <li class="footer-nav__item"><a href="#">Программа</a></li>
+                    <li class="footer-nav__item"><a href="#">Спикеры</a></li>
+                    <li class="footer-nav__item"><a href="#">Партнеры</a></li>
+                    <li class="footer-nav__item"><a href="#">Стоимость</a></li>
+                </ul>
+            </div>
+            <p class="copyright copyright--mobile"></p>
         </div>
+    </footer>
+    <section class="modal modal-login">
+        <h2 class="modal-title">Регистрация</h2>
+        <form class="login-form" action="#" method="post">
+            <p>
+                <label class="visually-hidden" for="user-login">Ваше имя</label>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Введите ваше имя"
+                    required>
+            </p>
+            <p>
+                <label class="visually-hidden" for="user-password">Ваш телефон</label>
+                <input class="login-icon-password" id="user-password" type="password" name="password"
+                    placeholder="+7 (123) 456 78 90" required>
+            </p>
+            <button class="button" type="submit">Отправить заявку</button>
+            <p class="login-password-info">
+                <label class="login-checkbox" for="user-password">
+                    <input class="visually-hidden" type="checkbox" name="remember">
+                    <span class="checkbox-indicator"></span>
+                    Нажимая кнопку, Вы&nbsp;принимаете условия <a href="#">Политики конфиденциальности</a> персональной
+                    информации
+                </label>
+            </p>
+
+        </form>
+        <button class="modal-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+        </button>
     </section>
-    <section class="header-info">
-        <section class="header-banner">
-            <div class="header-banner__wrapper">
-                <div class="header-banner__logo"></div>
-                <div class="header-banner__title">Научно-образовательная конференция по стандартизации и НСИ</div>
-                <div class="header-banner__description">National forum of standards & technology's</div>
-                <div class="header-banner__datetime">
-                    <div class="header-banner__datetime">14-15 сентября</div>
-                    <div class="header-banner__datetime">10:00</div>
-                </div>
-                <a class="header-banner__button button_registration">Зарегистрироваться</a>
-            </div>
-        </section>
-        <section class="advantages">
-            <div class="advantages__wrapper">
-                <div class="advantages__title title">Вам подойдет эта программа если у вас есть большая цель и вы хотите</div>
-                <div class="advantages__list">
-                    <div class="advantages__item">
-                        <div class="advantages__icon"></div>
-                        <div class="advantages__text">Обзавестись новыми полезными связями</div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__icon"></div>
-                        <div class="advantages__text">Разобраться что такое цифровой стандарт</div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__icon"></div>
-                        <div class="advantages__text">Узнать об интеграции стандартов с  производственными процессами</div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__icon"></div>
-                        <div class="advantages__text">Ознакомиться с новыми технологиями зарубежных стандартизаторов</div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__icon"></div>
-                        <div class="advantages__text">Увидеть цифровой конструктор стандартов</div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__icon"></div>
-                        <div class="advantages__text">Понять роль технологий в «Бережливом производстве»</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-</header>
-<main class="main">
-  <svg width="164" height="12" aria-hidden="true">
-    <use xlink:href="#icon-email"></use>
-  </svg>
-  <section class="location">
-      <div class="location__wrapper">
-          <div class="location__title title">Место проведения конференции</div>
-          <div class="location-section">
-              <div class="location-section__wrapper">
-                  <div class="location-section__info">
-                      <div class="location-section__text">
-                          <p>NFST 2021 было решено организовать в грандиозном месте – ультрасовременном архитектурном комплексе стеклянных небоскребов «Москва Сити».</p>
-                          <p>Деловой центр совмещает в себе интересы российских и зарубежных компаний. В нем пересекаются комфорт  и роскошь, бизнес и развлечения, уют и бурная жизнь мегаполиса. </p>
-                          <p>Уверены, что атмосфера придется каждому по душе</p>
-                      </div>
-                      <a class="location-section__button button_registration">Зарегистрироваться</a>
-                  </div>
-                  <div class="location-section__slider"></div>
-              </div>
-          </div>
-      </div>
-  </section>
-  <section class="prev-conferences">
-      <div class="prev-conferences__wrapper">
-          <div class="prev-conferences__title title">Предыдущие конференции</div>
-      </div>
-      <div class="prev-conferences__slider">
-      </div>
-  </section>
-  <section class="faq">
-      <div class="faq__wrapper">
-          <div class="faq__title title">FAQs</div>
-      </div>
-  </section>
-</main>
-<footer class="footer">
-  <div class="footer__wrapper">
-      <div class="footer-contacts">
-          <a class="footer-contacts__logo logo"></a>
-          <p class="footer-contacts__adress">Санкт-Петербург, Краснопутиловская ул., 69</p>
-          <div class="footer-contacts__social">
-              <ul class="social__list">
-                  <li class="social__item">
-                      <a class="social__link social__link--instagram"
-                          href="https://www.instagram.com/htmlacademy">Мы в
-                          Инстаграме</a>
-                  </li>
-                  <li class="social__item">
-                      <a class="social__link social__link--facebook"
-                          href="https://www.facebook.com/htmlacademy">Мы в
-                          Фейсбуке</a>
-                  </li>
-                  <li class="social__item">
-                      <a class="social__link social__link--youtube"
-                          href="https://www.instagram.com/htmlacademy">Мы в
-                          Ютубе</a>
-                  </li>
-              </ul>
-          </div>
-          <p class="copyright copyright--desktop">Все права защищены<br>
-              <span>© 2019 АНО «Интепром Стандарт»</span></p>
-      </div>
-      <div class="footer-nav">
-          <ul class="footer-nav__list">
-              <li class="footer-nav__title">Контакты</li>
-              <li class="footer-nav__item"><a href="tel:+7(812)4244647">+7 (812) 424 46 47</a></li>
-              <li class="footer-nav__item"><a href="mailto:info@gostonomica.ru">info@gostonomica.ru</a></li>
-          </ul>
-          <ul class="footer-nav__list">
-              <li class="footer-nav__title">Документы</li>
-              <li class="footer-nav__item"><a href="#">Политика конфиденциальности</a></li>
-              <li class="footer-nav__item"><a href="#">Документ № 1</a></li>
-              <li class="footer-nav__item"><a href="#">Документ № 2</a></li>
-          </ul>
-          <ul class="footer-nav__list">
-              <li class="footer-nav__title">Навигация по сайту</li>
-              <li class="footer-nav__item"><a href="#">О конференции</a></li>
-              <li class="footer-nav__item"><a href="#">Программа</a></li>
-              <li class="footer-nav__item"><a href="#">Спикеры</a></li>
-              <li class="footer-nav__item"><a href="#">Партнеры</a></li>
-              <li class="footer-nav__item"><a href="#">Стоимость</a></li>
-          </ul>
-      </div>
-      <p class="copyright copyright--mobile"></p>
-  </div>
-</footer>
-<section class="modal modal-login">
-    <h2 class="modal-title">Регистрация</h2>
-    <form class="login-form" action="#" method="post">
-      <p>
-        <label class="visually-hidden" for="user-login">Ваше имя</label>
-        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Введите ваше имя" required>
-      </p>
-      <p>
-        <label class="visually-hidden" for="user-password">Ваш телефон</label>
-        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="+7 (123) 456 78 90" required>
-      </p>
-      <button class="button" type="submit">Отправить заявку</button>
-      <p class="login-password-info">
-        <label class="login-checkbox" for="user-password">
-          <input class="visually-hidden" type="checkbox" name="remember">
-          <span class="checkbox-indicator"></span>
-          Нажимая кнопку, Вы принимаете условия <a href="#">Политики конфиденциальности</a> персональной информации
-        </label>
-      </p>
-     
-    </form>
-    <button class="modal-close" type="button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
-  </section>
 </body>
 
 </html>
