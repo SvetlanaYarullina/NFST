@@ -1,8 +1,18 @@
 .title {
-  color: white;
+  margin-bottom: 37px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
 
-  @include min-tablet {    
-    color: red;
+  @include min-tablet {
+    margin-bottom: 74px;
+    font-size: 36px;
+    line-height: 72px;
+    letter-spacing: 0.05em;
   }  
 }
 
@@ -17,6 +27,7 @@
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
+  color: $white;
 
   @include min-tablet {    
     max-width: 310px;
