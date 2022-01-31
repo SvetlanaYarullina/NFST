@@ -2,7 +2,7 @@
   color: $white;
 }
 .header-nav {
-  background-color: #040B3C;
+  background-color: $blue;
 }
 
 .header-nav__wrapper {
@@ -24,7 +24,6 @@
 }
 
 .header-banner__wrapper {
-  height: 540px;
   background-image: url("/src/images/bg-banner_mobile.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
@@ -39,6 +38,7 @@
     background-image: url("/src/images/bg-banner_desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50%;
   }
 }
 

@@ -7,23 +7,39 @@
 }
 
 .advantages__text {
-    margin-left: 56px;
+    margin-left: 12px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
 
     @include min-tablet {
-        margin-left: 56px;
+        margin-left: 22px;
         font-size: 18px;
         line-height: 25px;
     }
 }
 
 .advantages__item {
+    display: flex;
     margin-bottom: 18px;
 
     @include min-tablet {
         margin-bottom: 90px;
+    }
+}
+
+
+.advantages__icon {
+    display: flex;
+    align-items: center;
+
+    & svg {
+        fill: $blue;
+
+    @include min-tablet {
+        width: 53px;
+        height: 50px;
+    }
     }
 }
