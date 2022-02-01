@@ -24,7 +24,7 @@
 }
 
 .header-banner__wrapper {
-  background-image: url("/src/images/bg-banner_mobile.png");
+  background-image: url("/src/images/bg-banner_mobile.webp");
   background-repeat: no-repeat;
   background-position: 100% 50%;
 
@@ -35,7 +35,7 @@
 
 .header-info {
   @include min-tablet {
-    background-image: url("/src/images/bg-banner_desktop.png");
+    background-image: url("/src/images/bg-banner_desktop.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
