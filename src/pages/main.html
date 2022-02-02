@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFST</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
 </head>
 
 <body>
     <header class="header">
         <section class="header-nav">
             <div class="header-nav__wrapper">
-                <a class="header-nav__logo logo">
+                <a class="logo header-nav__logo">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="/src/images/logo-desktop.svg" width="171">
                         <img src="/src/images/logo-mobile.svg" width="81" height="29" alt="Logo NFST">
@@ -23,7 +23,7 @@
                     <button class="main-nav__toggle" type="button">
                         <span class="visually-hidden">Открыть меню</span>
                     </button>
-                    <div class="main-nav__wrapper col-lg-3">
+                    <div class="main-nav__wrapper">
                         <ul class="main-nav__list site-list">
                             <li class="site-list__item">
                                 <a href="tel:+7(812)4244647">
@@ -47,7 +47,7 @@
         </section>
         <section class="header-info">
             <section class="header-banner">
-                <div class="header-banner__wrapper container-xs">
+                <div class="container header-banner__wrapper ">
                     <a class="header-banner__logo">
                         <picture>
                             <source media="(min-width: 1200px)" width="730" srcset="/src/images/banner_img_desktop.png">
@@ -66,24 +66,24 @@
                 </div>
             </section>
             <section class="advantages">
-                <div class="advantages__wrapper container-xs">
-                    <div class="advantages__title title">Вам подойдет эта программа если у&nbsp;вас есть большая цель
+                <div class="container advantages__wrapper">
+                    <div class="title advantages__title">Вам подойдет эта программа если у&nbsp;вас есть большая цель
                         и&nbsp;вы&nbsp;хотите</div>
                     <div class="advantages__list">
                         <div class="row">
-                            <div class="advantages__item col-lg-2">
+                            <div class="advantages__item col-lg-4">
                                 <div class="advantages__icon"><svg width="32" height="31" aria-hidden="true">
                                         <use xlink:href="#icon-connections"></use>
                                     </svg></div>
                                 <div class="advantages__text">Обзавестись новыми<br> полезными связями</div>
                             </div>
-                            <div class="advantages__item col-lg-2">
+                            <div class="advantages__item col-lg-4">
                                 <div class="advantages__icon"><svg width="32" height="31" aria-hidden="true">
                                         <use xlink:href="#icon-screen"></use>
                                     </svg></div>
                                 <div class="advantages__text">Разобраться что такое<br> цифровой стандарт</div>
                             </div>
-                            <div class="advantages__item col-lg-2">
+                            <div class="advantages__item col-lg-4">
                                 <div class="advantages__icon"><svg width="32" height="31" aria-hidden="true">
                                         <use xlink:href="#icon-target"></use>
                                     </svg></div>
@@ -92,20 +92,20 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="advantages__item col-lg-2">
+                            <div class="advantages__item col-lg-4">
                                 <div class="advantages__icon"><svg width="32" height="31" aria-hidden="true">
                                         <use xlink:href="#icon-technologies"></use>
                                     </svg></div>
                                 <div class="advantages__text">Ознакомиться с&nbsp;новыми<br> технологиями зарубежных<br>
                                     стандартизаторов</div>
                             </div>
-                            <div class="advantages__item col-lg-2">
+                            <div class="advantages__item col-lg-4">
                                 <div class="advantages__icon"><svg width="32" height="31" aria-hidden="true">
                                         <use xlink:href="#icon-presentation"></use>
                                     </svg></div>
                                 <div class="advantages__text">Увидеть цифровой<br> конструктор стандартов</div>
                             </div>
-                            <div class="advantages__item col-lg-2">
+                            <div class="advantages__item col-lg-4">
                                 <div class="advantages__icon"><svg width="32" height="31" aria-hidden="true">
                                         <use xlink:href="#icon-saving"></use>
                                     </svg></div>
@@ -116,11 +116,17 @@
                     </div>
                 </div>
             </section>
+            <a class="header-info__bg-img">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="/src/images/bg-banner_desktop.webp" type="image/webp">
+                    <img src="/src/images/bg-banner_mobile.webp" alt="bg" type="image/webp">
+                </picture>
+            </a>
         </section>
     </header>
     <main class="main">
         <section class="location">
-            <div class="location__wrapper container-xs">
+            <div class="location__wrapper container">
                 <div class="location__title title">Место проведения конференции</div>
                 <div class="location-section">
                     <div class="location-section__wrapper">
@@ -136,7 +142,26 @@
                             </div>
                             <a class="location-section__button button__registration">Зарегистрироваться</a>
                         </div>
-                        <div class="location-section__slider"></div>
+                        <div class="location-section__slider">
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="/src/images/logo-mobile.svg" width="81" height="29" alt="Logo NFST">
+                                    </div>
+                                    <div class="swiper-slide"><img src="/src/images/logo-mobile.svg" width="81"
+                                            height="29" alt="Logo NFST"></div>
+                                    <div class="swiper-slide"><img src="/src/images/logo-mobile.svg" width="81"
+                                            height="29" alt="Logo NFST"></div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,14 +175,14 @@
         </section>
         <section class="faq">
             <div class="faq__wrapper">
-                <div class="faq__title title">FAQs</div>
+                <div class="title faq__title">FAQs</div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__wrapper">
             <div class="footer-contacts">
-                <a class="footer-contacts__logo logo"></a>
+                <a class="logo footer-contacts__logo"></a>
                 <p class="footer-contacts__adress">Санкт-Петербург, Краснопутиловская ул., 69</p>
                 <div class="footer-contacts__social">
                     <ul class="social__list">
@@ -236,9 +261,7 @@
                     stroke="#F6255A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
                     stroke-linejoin="round" />
             </g>
-        </symbol>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
+        </symbol>   
         <symbol id="icon-presentation" viewBox="0 0 60 60">
             <g>
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -264,8 +287,6 @@
                     fill="#F6255A" />
             </g>
         </symbol>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
         <symbol id="icon-saving" viewBox="0 0 56 60">
             <g>
                 <path
@@ -298,8 +319,6 @@
                 <rect x="11.4546" y="7.09094" width="2.54545" height="12.7273" rx="1.27273" fill="#F6255A" />
             </g>
         </symbol>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
         <symbol id="icon-screen" viewBox="0 0 59 56">
             <g>
                 <rect x="1.5" y="1.5" width="55.8475" height="43.5352" rx="13.5" stroke="#F6255A" stroke-width="3" />
@@ -309,8 +328,6 @@
                     fill="#F6255A" />
             </g>
         </symbol>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
         <symbol id="icon-target" viewBox="0 0 60 60">
             <g>
                 <rect x="31" y="28.5" width="22" height="3" rx="1.5" fill="#F6255A" />
@@ -323,8 +340,6 @@
                     stroke="#F6255A" stroke-width="3" stroke-linecap="round" />
             </g>
         </symbol>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
         <symbol id="icon-technologies" viewBox="0 0 55 59">
             <g>
                 <ellipse cx="27.3877" cy="21.4133" rx="19.2454" ry="19.4133" stroke="#F6255A" stroke-width="3" />
@@ -342,16 +357,16 @@
         </symbol>
     </svg>
     <section class="modal modal-login">
-        <h2 class="modal-title">Регистрация</h2>
+        <h2 class="modal__title">Регистрация</h2>
         <form class="login-form" action="#" method="post">
-            <p>
+            <p class="login-form__item">
                 <label class="visually-hidden" for="user-login">Ваше имя</label>
-                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Введите ваше имя"
+                <input class="login-form__input" id="user-login" type="text" name="login" placeholder="Введите ваше имя"
                     required>
             </p>
-            <p>
+            <p class="login-form__item">
                 <label class="visually-hidden" for="user-password">Ваш телефон</label>
-                <input class="login-icon-password" id="user-password" type="password" name="password"
+                <input class="login-form__input" id="user-password" type="password" name="password"
                     placeholder="+7 (123) 456 78 90" required>
             </p>
             <button class="button" type="submit">Отправить заявку</button>
@@ -365,10 +380,12 @@
             </p>
 
         </form>
-        <button class="modal-close" type="button">
+        <button class="modal__close" type="button">
             <span class="visually-hidden">Закрыть</span>
         </button>
     </section>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
 </body>
 
 </html>

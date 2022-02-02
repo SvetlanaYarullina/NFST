@@ -13,7 +13,7 @@
     <header class="header">
         <section class="header-nav">
             <div class="header-nav__wrapper">
-                <a class="header-nav__logo logo">
+                <a class="logo header-nav__logo">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="/src/images/logo-desktop.svg" width="171">
                         <img src="/src/images/logo-mobile.svg" width="81" height="29" alt="Logo NFST">
@@ -23,7 +23,7 @@
                     <button class="main-nav__toggle" type="button">
                         <span class="visually-hidden">Открыть меню</span>
                     </button>
-                    <div class="main-nav__wrapper col-lg-3">
+                    <div class="main-nav__wrapper">
                         <ul class="main-nav__list site-list">
                             <li class="site-list__item">
                                 <a href="tel:+7(812)4244647">
@@ -47,7 +47,7 @@
         </section>
         <section class="header-info">
             <section class="header-banner">
-                <div class="header-banner__wrapper container-xs">
+                <div class="container header-banner__wrapper ">
                     <a class="header-banner__logo">
                         <picture>
                             <source media="(min-width: 1200px)" width="730" srcset="/src/images/banner_img_desktop.png">
@@ -66,24 +66,24 @@
                 </div>
             </section>
             <section class="advantages">
-                <div class="advantages__wrapper container-xs">
-                    <div class="advantages__title title">Вам подойдет эта программа если у&nbsp;вас есть большая цель
+                <div class="container advantages__wrapper">
+                    <div class="title advantages__title">Вам подойдет эта программа если у&nbsp;вас есть большая цель
                         и&nbsp;вы&nbsp;хотите</div>
                     <div class="advantages__list">
                         <div class="row">
-                            <div class="advantages__item col-lg-2">
+                            <div class="advantages__item col-lg-4">
                                 <div class="advantages__icon"><svg width="32" height="31" aria-hidden="true">
                                         <use xlink:href="#icon-connections"></use>
                                     </svg></div>
                                 <div class="advantages__text">Обзавестись новыми<br> полезными связями</div>
                             </div>
-                            <div class="advantages__item col-lg-2">
+                            <div class="advantages__item col-lg-4">
                                 <div class="advantages__icon"><svg width="32" height="31" aria-hidden="true">
                                         <use xlink:href="#icon-screen"></use>
                                     </svg></div>
                                 <div class="advantages__text">Разобраться что такое<br> цифровой стандарт</div>
                             </div>
-                            <div class="advantages__item col-lg-2">
+                            <div class="advantages__item col-lg-4">
                                 <div class="advantages__icon"><svg width="32" height="31" aria-hidden="true">
                                         <use xlink:href="#icon-target"></use>
                                     </svg></div>
@@ -92,20 +92,20 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="advantages__item col-lg-2">
+                            <div class="advantages__item col-lg-4">
                                 <div class="advantages__icon"><svg width="32" height="31" aria-hidden="true">
                                         <use xlink:href="#icon-technologies"></use>
                                     </svg></div>
                                 <div class="advantages__text">Ознакомиться с&nbsp;новыми<br> технологиями зарубежных<br>
                                     стандартизаторов</div>
                             </div>
-                            <div class="advantages__item col-lg-2">
+                            <div class="advantages__item col-lg-4">
                                 <div class="advantages__icon"><svg width="32" height="31" aria-hidden="true">
                                         <use xlink:href="#icon-presentation"></use>
                                     </svg></div>
                                 <div class="advantages__text">Увидеть цифровой<br> конструктор стандартов</div>
                             </div>
-                            <div class="advantages__item col-lg-2">
+                            <div class="advantages__item col-lg-4">
                                 <div class="advantages__icon"><svg width="32" height="31" aria-hidden="true">
                                         <use xlink:href="#icon-saving"></use>
                                     </svg></div>
@@ -116,11 +116,17 @@
                     </div>
                 </div>
             </section>
+            <a class="header-info__bg-img">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="/src/images/bg-banner_desktop.webp" type="image/webp">
+                    <img src="/src/images/bg-banner_mobile.webp" alt="bg" type="image/webp">
+                </picture>
+            </a>
         </section>
     </header>
     <main class="main">
         <section class="location">
-            <div class="location__wrapper container-xs">
+            <div class="location__wrapper container">
                 <div class="location__title title">Место проведения конференции</div>
                 <div class="location-section">
                     <div class="location-section__wrapper">
@@ -136,7 +142,24 @@
                             </div>
                             <a class="location-section__button button__registration">Зарегистрироваться</a>
                         </div>
-                        <div class="location-section__slider"></div>
+                        <div class="location-section__slider">
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="/src/images/logo-mobile.svg" width="81" height="29" alt="Logo NFST">
+                                    </div>
+                                    <div class="swiper-slide"><img src="/src/images/logo-mobile.svg" width="81" height="29" alt="Logo NFST"></div>
+                                    <div class="swiper-slide"><img src="/src/images/logo-mobile.svg" width="81" height="29" alt="Logo NFST"></div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,14 +173,14 @@
         </section>
         <section class="faq">
             <div class="faq__wrapper">
-                <div class="faq__title title">FAQs</div>
+                <div class="title faq__title">FAQs</div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__wrapper">
             <div class="footer-contacts">
-                <a class="footer-contacts__logo logo"></a>
+                <a class="logo footer-contacts__logo"></a>
                 <p class="footer-contacts__adress">Санкт-Петербург, Краснопутиловская ул., 69</p>
                 <div class="footer-contacts__social">
                     <ul class="social__list">
@@ -215,8 +238,6 @@
                 <path d="M12.0726 10.9409C14.7946 10.9409 17.0012 8.93943 17.0012 6.47046C17.0012 4.00149 14.7946 2 12.0726 2C9.35065 2 7.14404 4.00149 7.14404 6.47046C7.14404 8.93943 9.35065 10.9409 12.0726 10.9409Z" stroke="#F6255A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
             </g>
         </symbol>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
         <symbol id="icon-presentation" viewBox="0 0 60 60">
             <g>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M26.2307 13.3075C26.2307 6.17041 32.0166 0.384644 39.1538 0.384644H45.0769C53.1062 0.384644 59.6153 6.89363 59.6153 14.9229V33.2303C59.6153 41.2595 53.1062 47.7685 45.0769 47.7685H40.7692C32.7398 47.7685 26.2307 41.2595 26.2307 33.2303V31.0764C26.2307 30.1843 26.9539 29.4611 27.8461 29.4611C28.7382 29.4611 29.4615 30.1843 29.4615 31.0764V33.2303C29.4615 39.4752 34.5241 44.5378 40.7692 44.5378H45.0769C51.3219 44.5378 56.3846 39.4752 56.3846 33.2303V14.9229C56.3846 8.6779 51.3219 3.61536 45.0769 3.61536H39.1538C33.8009 3.61536 29.4615 7.95468 29.4615 13.3075C29.4615 14.1996 28.7382 14.9229 27.8461 14.9229C26.9539 14.9229 26.2307 14.1996 26.2307 13.3075Z" fill="#F6255A" />
@@ -228,8 +249,6 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M42.5715 50C43.5182 50 44.2857 50.7675 44.2857 51.7143L44.2857 56.2857C44.2857 57.2325 43.5182 58 42.5715 58C41.6247 58 40.8572 57.2325 40.8572 56.2857L40.8572 51.7143C40.8572 50.7675 41.6247 50 42.5715 50Z" fill="#F6255A" />
             </g>
         </symbol>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
         <symbol id="icon-saving" viewBox="0 0 56 60">
             <g>
                 <path d="M53.6516 14.7273C53.6516 16.1021 52.7149 17.6031 50.6521 18.8408C48.6191 20.0606 45.7137 20.8637 42.4243 20.8637C39.1349 20.8637 36.2295 20.0606 34.1965 18.8408C32.1336 17.6031 31.197 16.1021 31.197 14.7273C31.197 13.3525 32.1336 11.8515 34.1965 10.6138C36.2295 9.39402 39.1349 8.59094 42.4243 8.59094C45.7137 8.59094 48.6191 9.39402 50.6521 10.6138C52.7149 11.8515 53.6516 13.3525 53.6516 14.7273Z" stroke="#F6255A" stroke-width="3" />
@@ -244,8 +263,6 @@
                 <rect x="11.4546" y="7.09094" width="2.54545" height="12.7273" rx="1.27273" fill="#F6255A" />
             </g>
         </symbol>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
         <symbol id="icon-screen" viewBox="0 0 59 56">
             <g>
                 <rect x="1.5" y="1.5" width="55.8475" height="43.5352" rx="13.5" stroke="#F6255A" stroke-width="3" />
@@ -253,8 +270,6 @@
                 <path d="M36.7989 19.5061C36.5215 18.9153 36.5806 18.2015 37.0311 17.7292C37.5557 17.1794 37.5545 16.314 37.0284 15.7656L36.5853 15.3036C36.0734 14.77 35.2198 14.7711 34.7094 15.3062C34.2684 15.7685 33.5611 15.83 32.9915 15.5404C32.7174 15.401 32.4349 15.2771 32.1449 15.1698C31.529 14.942 31.0643 14.3869 31.0643 13.7302C31.0643 12.9619 30.4414 12.339 29.673 12.339H29.1746C28.4063 12.339 27.7834 12.9619 27.7834 13.7302C27.7834 14.3869 27.3186 14.942 26.7027 15.1698C26.4128 15.2771 26.1302 15.401 25.8561 15.5404C25.2866 15.83 24.5793 15.7685 24.1382 15.3062C23.6278 14.7711 22.7742 14.77 22.2624 15.3036L21.8188 15.7661C21.2931 16.3141 21.2924 17.1788 21.8172 17.7277C22.268 18.1992 22.3274 18.9129 22.0499 19.5033C21.9001 19.8221 21.7686 20.152 21.657 20.4915C21.4604 21.0895 20.9292 21.5393 20.2997 21.5393C19.5726 21.5393 18.9832 22.1287 18.9832 22.8558V23.6552C18.9832 24.3809 19.5714 24.9692 20.2971 24.9692C20.9264 24.9692 21.4571 25.4194 21.6523 26.0176C21.7646 26.3619 21.8975 26.6964 22.0491 27.0195C22.3248 27.6071 22.2646 28.3171 21.8154 28.7855C21.2931 29.33 21.2919 30.1891 21.8127 30.735L22.2644 31.2085C22.7734 31.742 23.6246 31.7431 24.135 31.211C24.5754 30.7519 25.2795 30.6918 25.8462 30.9808C26.1257 31.1234 26.414 31.2499 26.7101 31.3591C27.3219 31.5846 27.7834 32.1359 27.7834 32.788C27.7834 33.551 28.4019 34.1695 29.1649 34.1695H29.6828C30.4458 34.1695 31.0643 33.551 31.0643 32.788C31.0643 32.1359 31.5257 31.5846 32.1376 31.3591C32.4336 31.2499 32.7219 31.1234 33.0014 30.9808C33.5681 30.6918 34.2723 30.7519 34.7126 31.211C35.223 31.7431 36.0742 31.742 36.5832 31.2085L37.0349 30.735C37.5558 30.1891 37.5546 29.33 37.0323 28.7855C36.583 28.3171 36.5229 27.6071 36.7986 27.0195C36.9502 26.6964 37.083 26.3619 37.1954 26.0176C37.3905 25.4194 37.9213 24.9692 38.5506 24.9692C39.2762 24.9692 39.8645 24.3809 39.8645 23.6552V22.8558C39.8645 22.1287 39.2751 21.5393 38.548 21.5393C37.9185 21.5393 37.3872 21.0895 37.1906 20.4915C37.0794 20.153 36.9482 19.8241 36.7989 19.5061ZM29.4238 29.759C25.3383 29.759 23.1984 26.4379 23.1984 23.2626C23.1984 19.161 26.7076 16.7461 29.4238 16.7461C33.5093 16.7461 35.646 20.5422 35.646 23.2626C35.646 25.9831 33.5093 29.759 29.4238 29.759Z" fill="#F6255A" />
             </g>
         </symbol>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
         <symbol id="icon-target" viewBox="0 0 60 60">
             <g>
                 <rect x="31" y="28.5" width="22" height="3" rx="1.5" fill="#F6255A" />
@@ -263,8 +278,6 @@
                 <path d="M43 21.75C40.2668 17.1058 35.2957 14 29.6167 14C20.9918 14 14 21.1634 14 30C14 38.8366 20.9918 46 29.6167 46C35.2957 46 40.2668 42.8942 43 38.25" stroke="#F6255A" stroke-width="3" stroke-linecap="round" />
             </g>
         </symbol>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
         <symbol id="icon-technologies" viewBox="0 0 55 59">
             <g>
                 <ellipse cx="27.3877" cy="21.4133" rx="19.2454" ry="19.4133" stroke="#F6255A" stroke-width="3" />
@@ -278,15 +291,15 @@
         </symbol>
     </svg>
     <section class="modal modal-login">
-        <h2 class="modal-title">Регистрация</h2>
+        <h2 class="modal__title">Регистрация</h2>
         <form class="login-form" action="#" method="post">
-            <p>
+            <p class="login-form__item">
                 <label class="visually-hidden" for="user-login">Ваше имя</label>
-                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Введите ваше имя" required>
+                <input class="login-form__input" id="user-login" type="text" name="login" placeholder="Введите ваше имя" required>
             </p>
-            <p>
+            <p class="login-form__item">
                 <label class="visually-hidden" for="user-password">Ваш телефон</label>
-                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="+7 (123) 456 78 90" required>
+                <input class="login-form__input" id="user-password" type="password" name="password" placeholder="+7 (123) 456 78 90" required>
             </p>
             <button class="button" type="submit">Отправить заявку</button>
             <p class="login-password-info">
@@ -299,10 +312,12 @@
             </p>
 
         </form>
-        <button class="modal-close" type="button">
+        <button class="modal__close" type="button">
             <span class="visually-hidden">Закрыть</span>
         </button>
     </section>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
 </body>
 
 </html>

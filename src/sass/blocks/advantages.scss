@@ -4,46 +4,45 @@
     @include min-tablet {
         margin-top: 200px
     }
-}
 
-.advantages__text {
-    margin-left: 12px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-
-    @include min-tablet {
-        margin-left: 22px;
-        font-size: 18px;
-        line-height: 25px;
-    }
-}
-
-.advantages__item {
-    display: flex;
-    margin-bottom: 18px;
-
-    @include min-tablet {
-        margin-bottom: 90px;
-    }
-}
-
-
-.advantages__icon {
-    display: flex;
-    align-items: center;
-
-    @include min-tablet {
-        align-items: flex-start;
+    &__text {
+        margin-left: 12px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+    
+        @include min-tablet {
+            margin-left: 22px;
+            font-size: 18px;
+            line-height: 25px;
+        }
     }
 
-    & svg {
-        fill: $blue;
-
-    @include min-tablet {
-        width: 53px;
-        height: 50px;
+    &__item {
+        display: flex;
+        margin-bottom: 18px;
+    
+        @include min-tablet {
+            margin-bottom: 90px;
+        }
     }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+    
+        @include min-tablet {
+            align-items: flex-start;
+        }
+    
+        & svg {
+            fill: $blue;
+    
+        @include min-tablet {
+            width: 53px;
+            height: 50px;
+        }
+        }
     }
 }

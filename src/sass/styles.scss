@@ -1,5 +1,6 @@
 // plugins
-// @import swiper
+// import Swiper and modules styles
+@import "../../node_modules/swiper/swiper.min";
 
 // global
 @import './variables/variables';
@@ -10,7 +11,9 @@
 // blocks
 @import "./blocks/header";
 @import "./blocks/footer";
-@import "./blocks/popup";
-@import "./blocks/advantages.scss";
-@import "./blocks/location.scss";
-
+@import "./blocks/modal";
+@import "./blocks/advantages";
+@import "./blocks/location";
+@import "./blocks/main-nav";
+@import "./blocks/swiper";
+ 
