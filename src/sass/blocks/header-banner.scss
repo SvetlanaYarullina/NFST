@@ -1,0 +1,126 @@
+// .header {
+//   color: $white;
+// }
+// .header-nav {
+//   background-color: $blue;
+
+//   &__wrapper {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 0 16px;
+//     height: 53px;
+  
+//     @include min-tablet {
+//       height: 118px;
+//       max-width: 1170px;
+//       margin: 0 auto;
+//     }  
+//   }
+// }
+
+// .logo {
+//   display: flex;
+//   align-items: center;
+// }
+
+.header-info {
+  position: relative;
+
+  &__bg-img {
+    position: absolute;
+    top: 0;
+    z-index: -10;
+  
+    @include min-tablet {
+      bottom: 0;
+      right: 0;
+    }  
+  }
+}
+
+.header-banner {
+  &__logo {
+    display: block;
+    margin-top: 60px;
+  
+    @include min-tablet {
+      margin-top: 90px;
+    }  
+  }
+  &__title {
+    max-width: 500px;
+    margin-top: 17px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white;
+  
+    @include min-tablet {
+      margin-top: 15px;
+      font-size: 24px;
+      line-height: 28px;
+    }  
+  }
+
+  &__description {
+    max-width: 500px;
+    margin-top: 14px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white;
+  
+    @include min-tablet {
+      margin-top: 21px;
+      font-size: 24px;
+      line-height: 28px;
+    } 
+  }
+
+  &__datetime {
+    display: flex;
+    margin-top: 29px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: $white;
+  
+    @include min-tablet {
+      margin-top: 55px;
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+
+  &__date {
+    margin-right: 27px;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      margin-left: 204px;
+      height: 30px;
+      border-left: 3px solid #F6255A;
+      
+      @include min-tablet {
+        margin-left: 306px;
+        height: 48px;
+      }
+    }
+  
+    @include min-tablet {
+      margin-right: 51px;
+    }
+  }
+
+  &__button {
+    margin-top: 31px;
+  
+    @include min-tablet {
+      margin-top: 57px;
+    }
+  }
+}

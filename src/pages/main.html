@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFST</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
 </head>
 
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <section class="header-nav">
             <div class="header-nav__wrapper">
                 <a class="logo header-nav__logo">
                     <picture>
-                        <source media="(min-width: 1200px)" srcset="/src/images/logo-desktop.svg" width="171">
-                        <img src="/src/images/logo-mobile.svg" width="81" height="29" alt="Logo NFST">
+                        <source media="(min-width: 1200px)" srcset="../images/logo-desktop.svg" width="171">
+                        <img src="../images/logo-mobile.svg" width="81" height="29" alt="Logo NFST">
                     </picture>
                 </a>
                 <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -45,6 +45,42 @@
                 </nav>
             </div>
         </section>
+    </header> -->
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="../images/logo-desktop.svg" width="171">
+                    <img src="../images/logo-mobile.svg" width="81" height="29" alt="Logo NFST">
+                </picture>
+            </a>
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li>
+                            <a href="tel:+7(812)4244647" class="menu__link">
+                                8 <span>(812)</span> 424 46 47
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@gostonomica.ru" class="menu__link">
+                                <span>info@</span>gostonomica.ru
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="login.html">
+                                Зарегистроваться
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
         <section class="header-info">
             <section class="header-banner">
                 <div class="container header-banner__wrapper ">
@@ -118,13 +154,15 @@
             </section>
             <a class="header-info__bg-img">
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="/src/images/bg-banner_desktop.webp" type="image/webp">
-                    <img src="/src/images/bg-banner_mobile.webp" alt="bg" type="image/webp">
+                    <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="/src/images/bg-banner_desktop.webp 1x, /src/images/bg-banner_desktop@2x.webp 2x">
+                    <sourse type="image/webp" srcset="/src/images/bg-banner_mobile.webp 1x, /src/images/bg-banner_mobile@2x.webp 2x"> -->
+                    <source media="(min-width: 1200px)"
+                        srcset="/src/images/bg-banner_desktop.png 1x, /src/images/bg-banner_desktop@2x.png 2x">
+                    <img src="/src/images/bg-banner_mobile.png" srcset="/src/images/bg-banner_mobile@2x.png 2x"
+                        alt="bg">
                 </picture>
             </a>
         </section>
-    </header>
-    <main class="main">
         <section class="location">
             <div class="location__wrapper container">
                 <div class="location__title title">Место проведения конференции</div>
@@ -261,7 +299,7 @@
                     stroke="#F6255A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
                     stroke-linejoin="round" />
             </g>
-        </symbol>   
+        </symbol>
         <symbol id="icon-presentation" viewBox="0 0 60 60">
             <g>
                 <path fill-rule="evenodd" clip-rule="evenodd"
