@@ -14,6 +14,10 @@ body {
   *:before {
     box-sizing: border-box;
   }
+
+  &.__lock {
+    overflow: hidden;
+  }
 }
 
 main {

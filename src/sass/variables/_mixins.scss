@@ -4,3 +4,9 @@
     @content;
   }
 }
+
+@mixin only-mobile {
+  @media screen and (max-width: $only-mobile) {
+    @content;
+  }
+}

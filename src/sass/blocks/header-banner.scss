@@ -1,39 +1,15 @@
-// .header {
-//   color: $white;
-// }
-// .header-nav {
-//   background-color: $blue;
-
-//   &__wrapper {
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 0 16px;
-//     height: 53px;
-  
-//     @include min-tablet {
-//       height: 118px;
-//       max-width: 1170px;
-//       margin: 0 auto;
-//     }  
-//   }
-// }
-
-// .logo {
-//   display: flex;
-//   align-items: center;
-// }
-
 .header-info {
   position: relative;
 
   &__bg-img {
     position: absolute;
     top: 0;
+    right: 0;
     z-index: -10;
   
     @include min-tablet {
       bottom: 0;
-      right: 0;
+      
     }  
   }
 }
@@ -41,10 +17,10 @@
 .header-banner {
   &__logo {
     display: block;
-    margin-top: 60px;
+    margin-top: 36px;
   
     @include min-tablet {
-      margin-top: 90px;
+      margin-top: 80px;
     }  
   }
   &__title {
