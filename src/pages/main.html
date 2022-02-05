@@ -145,23 +145,53 @@
                             <a class="location-section__button button__registration">Зарегистрироваться</a>
                         </div>
                         <div class="location-section__slider">
-                            <div class="swiper">
+                            <div class="location-section__swiper swiper">
                                 <!-- Additional required wrapper -->
                                 <div class="swiper-wrapper">
                                     <!-- Slides -->
                                     <div class="swiper-slide">
-                                        <img src="/src/images/logo-mobile.svg" width="81" height="29" alt="Logo NFST">
+                                        <a class="location-section__slide">
+                                            <picture>
+                                                <source media="(min-width: 1200px)"
+                                                    srcset="/src/images/location_img_desktop.jpg 1x, /src/images/location_img_desktop@2x.jpg 2x">
+                                                <img src="/src/images/location_img_mobile.jpg"
+                                                    srcset="/src/images/location_img_mobile@2x.jpg 2x" alt="location">
+                                            </picture>
+                                        </a>
                                     </div>
-                                    <div class="swiper-slide"><img src="/src/images/logo-mobile.svg" width="81"
-                                            height="29" alt="Logo NFST"></div>
-                                    <div class="swiper-slide"><img src="/src/images/logo-mobile.svg" width="81"
-                                            height="29" alt="Logo NFST"></div>
+                                    <div class="swiper-slide"> <a class="location-section__slide">
+                                            <picture>
+                                                <source media="(min-width: 1200px)"
+                                                    srcset="/src/images/location_img_desktop.jpg 1x, /src/images/location_img_desktop@2x.jpg 2x">
+                                                <img src="/src/images/location_img_mobile.jpg"
+                                                    srcset="/src/images/location_img_mobile@2x.jpg 2x" alt="location">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide"> <a class="location-section__slide">
+                                            <picture>
+                                                <source media="(min-width: 1200px)"
+                                                    srcset="/src/images/location_img_desktop.jpg 1x, /src/images/location_img_desktop@2x.jpg 2x">
+                                                <img src="/src/images/location_img_mobile.jpg"
+                                                    srcset="/src/images/location_img_mobile@2x.jpg 2x" alt="location">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide"> <a class="location-section__slide">
+                                            <picture>
+                                                <source media="(min-width: 1200px)"
+                                                    srcset="/src/images/location_img_desktop.jpg 1x, /src/images/location_img_desktop@2x.jpg 2x">
+                                                <img src="/src/images/location_img_mobile.jpg"
+                                                    srcset="/src/images/location_img_mobile@2x.jpg 2x" alt="location">
+                                            </picture>
+                                        </a>
+                                    </div>
                                 </div>
                                 <!-- If we need pagination -->
                                 <div class="swiper-pagination"></div>
                                 <!-- If we need navigation buttons -->
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
+                                <!-- <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div> -->
                             </div>
                         </div>
                     </div>
@@ -169,20 +199,20 @@
             </div>
         </section>
         <section class="prev-conferences">
-            <div class="prev-conferences__wrapper">
+            <div class="prev-conferences__wrapper container">
                 <div class="prev-conferences__title title">Предыдущие конференции</div>
             </div>
             <div class="prev-conferences__slider">
             </div>
         </section>
         <section class="faq">
-            <div class="faq__wrapper">
+            <div class="faq__wrapper container">
                 <div class="title faq__title">FAQs</div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__wrapper">
+        <div class="footer__wrapper container">
             <div class="footer-contacts">
                 <a class="logo footer-contacts__logo"></a>
                 <p class="footer-contacts__adress">Санкт-Петербург, Краснопутиловская ул., 69</p>
@@ -390,4 +420,5 @@
     <script src="../js/swiper.js"></script>
     <script src="../js/mobile-menu.js"></script>
 </body>
+
 </html>

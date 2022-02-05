@@ -89,6 +89,7 @@
         &--registration {
             color: $pink;
             text-transform: uppercase;
+            text-decoration: underline;
         }
 
         & span{
@@ -133,7 +134,7 @@
     
                 & span {
                     top: 50%;
-                    transform: scale(1) translate (0px, -50%);
+                    transform: scale(1) translate(0, -50%);
                 }
     
                 &--active {
@@ -150,7 +151,7 @@
     
                     &:after {
                         bottom: 50%;
-                        transform: rotate(45deg) translate(0px, -50%); 
+                        transform: rotate(45deg) translate(0px, 50%); 
                     }
                 }   
         }

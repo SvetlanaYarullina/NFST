@@ -1,8 +1,12 @@
 .swiper {
-    width: 200px;
+    width: 600px;
     height: 300px;
 
+  
+  }
+
+  .location-section__swiper {
     @include min-tablet {
-      width: 600px;
+      width: 370px;
     }
   }

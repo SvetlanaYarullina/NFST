@@ -24,6 +24,8 @@
         padding: 40px 17px;
     
         @include min-tablet {
+            display: flex;
+            justify-content: space-between;
             padding: 63px 98px 61px 89px;
         }
     }
