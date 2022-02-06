@@ -97,7 +97,7 @@
         }
     }
 
-    &__icon {
+    &__toggle {
         display: none;
 
         @include only-mobile {
@@ -106,7 +106,9 @@
                 position: relative;
                 width: 30px;
                 height: 18px;
-                cursor: pointer;     
+                cursor: pointer; 
+                background-color: $light-blue;   
+                border: none; 
     
                 & span,
                 &:before,

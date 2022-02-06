@@ -1,11 +1,11 @@
 "use strict";
 
-var iconMenu = document.querySelector('.menu__icon');
+var toggleMenu = document.querySelector('.menu__toggle');
 var menuBody = document.querySelector ('.menu__body');
-if (iconMenu) { 
-    iconMenu.addEventListener('click', function (e) {
+if (toggleMenu) { 
+    toggleMenu.addEventListener('click', function (e) {
         document.body.classList.toggle('__lock');
-        iconMenu.classList.toggle('menu__icon--active');
+        toggleMenu.classList.toggle('menu__toggle--active');
         menuBody.classList.toggle('menu__body--active');
     });
 }

@@ -19,9 +19,10 @@
                 </picture>
             </a>
             <div class="header__menu menu">
-                <div class="menu__icon">
+                <button class="menu__toggle" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
                     <span></span>
-                </div>
+                </button>
                 <nav class="menu__body">
                     <ul class="menu__list">
                         <li class="menu__item">
@@ -118,12 +119,12 @@
             </section>
             <a class="header-info__bg-img">
                 <picture>
-                    <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="/src/images/bg-banner_desktop.webp 1x, /src/images/bg-banner_desktop@2x.webp 2x">
-                    <sourse type="image/webp" srcset="/src/images/bg-banner_mobile.webp 1x, /src/images/bg-banner_mobile@2x.webp 2x"> -->
-                    <source media="(min-width: 1200px)"
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="/src/images/bg-banner_desktop.webp 1x, /src/images/bg-banner_desktop@2x.webp 2x">
+                    <img type="image/webp" src="/src/images/bg-banner_mobile.webp" srcset="/src/images/bg-banner_mobile@2x.webp 2x" alt="bg">
+                    <!-- <source media="(min-width: 1200px)"
                         srcset="/src/images/bg-banner_desktop.png 1x, /src/images/bg-banner_desktop@2x.png 2x">
                     <img src="/src/images/bg-banner_mobile.png" srcset="/src/images/bg-banner_mobile@2x.png 2x"
-                        alt="bg">
+                        alt="bg"> -->
                 </picture>
             </a>
         </section>
@@ -146,9 +147,7 @@
                         </div>
                         <div class="location-section__slider">
                             <div class="location-section__swiper swiper">
-                                <!-- Additional required wrapper -->
                                 <div class="swiper-wrapper">
-                                    <!-- Slides -->
                                     <div class="swiper-slide">
                                         <a class="location-section__slide">
                                             <picture>
@@ -187,16 +186,22 @@
                                         </a>
                                     </div>
                                 </div>
-                                <!-- If we need pagination -->
                                 <div class="swiper-pagination"></div>
-                                <!-- If we need navigation buttons -->
-                                <!-- <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <a class="location__bg-img">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="/src/images/bg-location_desktop.webp 1x, /src/images/bg-location_desktop@2x.webp 2x">
+                    <img type="image/webp" src="/src/images/bg-location_mobile.webp" srcset="/src/images/bg-location_mobile@2x.webp 2x" alt="bg">
+                    <!-- <source media="(min-width: 1200px)"
+                        srcset="/src/images/bg-location_desktop.png 1x, /src/images/bg-location_desktop@2x.png 2x">
+                    <img src="/src/images/bg-location_mobile.png" srcset="/src/images/bg-location_mobile@2x.png 2x"
+                        alt="bg"> -->
+                </picture>
+            </a>
         </section>
         <section class="prev-conferences">
             <div class="prev-conferences__wrapper container">
