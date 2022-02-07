@@ -7,6 +7,7 @@ var swiper = new Swiper('.location-section__swiper', {
     delay: 2000
   },
   pagination: {
-    el: '.swiper-pagination'
+    el: '.location-section__swiper-pagination',
+    clickable: true
   }
 });
