@@ -5,19 +5,19 @@
 //     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 // }
 
-// .modal-login {
-//     top: 140px;
-//     left: 50%;
-//     display: none;
-//     width: 300px;
-//     margin-left: -135px;
-//     padding: 50px 80px;
+.modal-login {
+    top: 140px;
+    left: 50%;
+    display: none;
+    width: 300px;
+    margin-left: -135px;
+    padding: 50px 80px;
 
-//     @include min-tablet{
-//         top: 120px;
-//         margin-left: -230px;
-//     }
-// }
+    @include min-tablet{
+        top: 120px;
+        margin-left: -230px;
+    }
+}
 
 // .modal-show {
 //     display: block;

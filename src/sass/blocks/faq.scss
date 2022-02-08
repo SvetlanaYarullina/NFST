@@ -25,6 +25,7 @@
                 font-weight: bold;
 
                 &:after {
+                    top: 47%;
                     transform: rotate(45deg);
                 }
             }
@@ -51,13 +52,13 @@
             content: "";
             display: inline-flex;
             position: absolute;
-            top: 45%;
+            top: 43%;
             left: 7px;
             width: 12px;
             height: 12px;
             border-top: 2px solid $pink;
             border-left: 2px solid $pink;
-            transform: rotate(-135deg);
+            transform: rotate(225deg);
             transition-duration: 0.5s;
         }
 

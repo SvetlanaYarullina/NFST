@@ -14,7 +14,7 @@
         <div class="header__container container">
             <a href="#" class="header__logo">
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="../images/logo-desktop.svg" width="171">
+                    <source media="(min-width: 1200px)" srcset="../images/logo-desktop.svg" width="171" height="61">
                     <img src="../images/logo-mobile.svg" width="81" height="29" alt="Logo NFST">
                 </picture>
             </a>
@@ -258,36 +258,46 @@
         <section class="faq">
             <div class="faq__wrapper container">
                 <div class="faq__title title">FAQs</div>
-            <div class="accordion">
-                <div class="accordion__item">
-                    <div class="accordion__trigger">Все ли спикеры подтвердили участие?<span class="visually-hidden">Открыть-закрыть</span></div>
-                    <div class="accordion__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__trigger">Все ли спикеры подтвердили участие?<span
+                                class="visually-hidden">Открыть-закрыть</span></div>
+                        <div class="accordion__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__trigger">Если я пропущу ЗАНЯТИЕ, смогу ли я посмотреть запись?<span
+                                class="visually-hidden">Открыть-закрыть</span></div>
+                        <div class="accordion__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__trigger">Будет ли перевод на русский язык?<span
+                                class="visually-hidden">Открыть-закрыть</span></div>
+                        <div class="accordion__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__trigger">Какие мероприятия вы уже проводили? Кто организатор?<span
+                                class="visually-hidden">Открыть-закрыть</span></div>
+                        <div class="accordion__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__trigger">Выдаете ли вы сертификат участникам?<span
+                                class="visually-hidden">Открыть-закрыть</span></div>
+                        <div class="accordion__content">Все участники конференции получают именной сертификат.</div>
+                    </div>
                 </div>
-                <div class="accordion__item">
-                    <div class="accordion__trigger">Если я пропущу ЗАНЯТИЕ, смогу ли я посмотреть запись?<span class="visually-hidden">Открыть-закрыть</span></div>
-                    <div class="accordion__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                </div>
-                <div class="accordion__item">
-                    <div class="accordion__trigger">Будет ли перевод на русский язык?<span class="visually-hidden">Открыть-закрыть</span></div>
-                    <div class="accordion__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                </div>
-                <div class="accordion__item">
-                    <div class="accordion__trigger">Какие мероприятия вы уже проводили? Кто организатор?<span class="visually-hidden">Открыть-закрыть</span></div>
-                    <div class="accordion__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                </div>
-                <div class="accordion__item">
-                    <div class="accordion__trigger">Выдаете ли вы сертификат участникам?<span class="visually-hidden">Открыть-закрыть</span></div>
-                    <div class="accordion__content">Все участники конференции получают именной сертификат.</div>
-                </div>
-            </div>
-            
+
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__wrapper container">
-            <div class="footer-contacts">
-                <a class="logo footer-contacts__logo"></a>
+            <section class="footer-contacts">
+                <a class="footer-contacts__logo">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="../images/logo-desktop.svg" width="165" height="53">
+                        <img src="../images/logo-mobile.svg" width="100" height="32" alt="Logo NFST">
+                    </picture>
+                </a>
                 <p class="footer-contacts__adress">Санкт-Петербург, Краснопутиловская ул., 69</p>
                 <div class="footer-contacts__social">
                     <ul class="social__list">
@@ -308,11 +318,11 @@
                         </li>
                     </ul>
                 </div>
-                <p class="copyright copyright--desktop">Все права защищены<br>
+                <div class="copyright--desktop copyright">Все права защищены<br>
                     <span>&copy;&nbsp;2019&nbsp;АНО &laquo;Интепром Стандарт&raquo;</span>
-                </p>
-            </div>
-            <div class="footer-nav">
+                </div>
+            </section>
+            <section class="footer-nav">
                 <ul class="footer-nav__list">
                     <li class="footer-nav__title">Контакты</li>
                     <li class="footer-nav__item"><a href="tel:+7(812)4244647">+7 (812) 424 46 47</a></li>
@@ -332,8 +342,9 @@
                     <li class="footer-nav__item"><a href="#">Партнеры</a></li>
                     <li class="footer-nav__item"><a href="#">Стоимость</a></li>
                 </ul>
-            </div>
-            <p class="copyright copyright--mobile"></p>
+                <div class="copyright--mobile copyright">Все права защищены<br>
+                    <span>&copy;&nbsp;2019&nbsp;АНО &laquo;Интепром Стандарт&raquo;</span></div>
+            </section>
         </div>
     </footer>
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
