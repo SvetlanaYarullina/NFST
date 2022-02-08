@@ -1,6 +1,6 @@
 'use strict';
 
-const swiper = new Swiper('.location-section__swiper', {
+const swiperLocation = new Swiper('.location-section__swiper', {
 
     direction: 'horizontal',
     loop: true,

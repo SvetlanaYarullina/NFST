@@ -1,6 +1,6 @@
 'use strict';
 
-var swiper = new Swiper('.location-section__swiper', {
+var swiperLocation = new Swiper('.location-section__swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {

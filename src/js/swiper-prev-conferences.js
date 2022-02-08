@@ -1,6 +1,6 @@
 'use strict';
 
-const swiper = new Swiper('.prev-conferences__swiper', {
+const swiperConfernces = new Swiper('.prev-conferences__swiper', {
 
     direction: 'horizontal',
     loop: true,

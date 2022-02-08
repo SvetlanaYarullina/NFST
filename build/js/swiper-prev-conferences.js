@@ -1,6 +1,6 @@
 'use strict';
 
-var swiper = new Swiper('.prev-conferences__swiper', {
+var swiperConfernces = new Swiper('.prev-conferences__swiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
