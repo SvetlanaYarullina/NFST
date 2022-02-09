@@ -1,154 +1,171 @@
-// .modal {
-//     position: fixed;
-//     color: #000000;
-//     background-color: #f8f3f0;
-//     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-// }
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 11, 60, 0.8);
+    z-index: 20;
 
-.modal-login {
-    top: 140px;
-    left: 50%;
-    display: none;
-    width: 300px;
-    margin-left: -135px;
-    padding: 50px 80px;
+    &--registration {
+        display: none;
+    }
 
-    @include min-tablet{
-        top: 120px;
-        margin-left: -230px;
+    &--show {
+        display: block;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        min-height: 100%;
+        padding: 30px 16px;
+        align-items: center;
+    }
+
+    &__content {
+        position: relative;
+        padding: 20px;
+        max-width: 530px;
+        background-color: $blue;
+        color: $white;
+        border-radius: 8px;
+
+        @include min-tablet {
+            padding: 30px;
+        }
+    }
+
+    &__title {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        @include min-tablet {
+            font-size: 36px;
+            line-height: 72px;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 19px;
+            height: 3px;
+            background-color: $white;
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+        }
     }
 }
 
-// .modal-show {
-//     display: block;
-// }
+.form {
+    &__input {
+        width: 100%;
+        max-width: 530px;
+        height: 63px;
+        padding: 14px 20px 13px;
+        background: $white;
+        border-radius: 8px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 36px;
+        color: $dark-grey;
 
-// .modal-close {
-//     position: absolute;
-//     top: 0;
-//     right: -34px;
-//     width: 22px;
-//     height: 22px;
-//     background-color: transparent;
-//     border: 0;
-//     cursor: pointer;
+        @include min-tablet {
+            font-size: 14px;
+        }
+    }
 
-// &::before,
-// &::after {
-//     content: "";
-//     position: absolute;
-//     top: 10px;
-//     left: 2px;
-//     width: 19px;
-//     height: 3px;
-//     background-color: #d0d0d0;
-// }
+    &__field {
+        margin-bottom: 16px;
+    }
 
-// .modal-close::before {
-//     transform: rotate(45deg);
+    &__consent-text {
+        display: block;
+        margin-left: 37px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 17px;
+        color: $white;
 
-// }
+        @include min-tablet {
+            font-size: 14px;
+            line-height: 20px;
+            margin-left: 37px;
+        }
 
-// .modal-close::after {
-//     transform: rotate(-45deg);
+        & a {
+            color: $pink;
+        }
+    }
 
-// }
+    &__checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
 
-// .modal h2 {
-//     margin: 0;
-//     margin-bottom: 20px;
-//     font-size: 30px;
-//     line-height: 42px;
-// }
+        & + label {
+            display: inline-flex;
+            align-items: flex-start;
+            user-select: none;
 
-// .login-form p {
-//     margin: 0;
-//     margin-bottom: 10px;
-// }
+            &::before {
+                content: "";
+                display: inline-block;
+                left: 0;
+                width: 26px;
+                height: 26px;
+                flex-shrink: 0;
+                flex-grow: 0;
+                border: 1px solid $white;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 50% 50%;
+            }
+        }
 
-// .login-form input[type="text"],
-// .login-form input[type="password"] {
-//     box-sizing: border-box;
-//     width: 100%;
-//     padding: 10px 15px;
-//     padding-right: 40px;
-//     font: inherit;
-//     color: #000000;
-//     text-transform: uppercase;
+        &:checked + label::before {
+            background-color: transparent;
+            background-image: url('/src/images/icon-check.svg');
+        }
+    }
+}
 
-//     background-color: #f9f6f3;
-//     border: 2px solid #e5ddd5;;
-// }
+.button {
+    &--registration {
+        width: 100%;
+        max-width: 530px;
+        height: 63px;
+        margin-bottom: 20px;
 
-// .login-form input:focus {
-//     border-color: #663d15;
-// }
+        @include min-tablet {
+            margin-bottom: 43px;
+        }
+    }
+}
 
-// .login-password-info{
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-// }
-
-// .login-checkbox {
-//     position: relative;
-//     padding-left: 30px;
-//     cursor: pointer;
-// }
-
-// .login-checkbox:hover,
-// .login-checkbox:focus {
-//     color: #663d15;
-// }
-
-// .login-checkbox input[type="checkbox"] + .checkbox-indicator {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 17px;
-//     height: 17px;
-//     border: 2px solid #000000;
-// }
-
-// .login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
-//     border-color: #663d15;
-//     outline: thin dotted;
-//     outline: 5px auto;
-// }
-
-// .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
-// .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-//     content: "";
-//     position: absolute;
-//     top: 8px;
-//     left: 1px;
-//     width: 15px;
-//     height: 2px;
-//     background-color: #000000;
-// }
-
-// .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-//     transform: rotate(45deg);
-// }
-
-// .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-//     transform: rotate(-45deg);
-// }
-
-// .restore {
-//     color: #000000;
-//     text-decoration: underline;
-// }
-
-// .restore:hover,
-// .restore:focus {
-//     text-decoration: none;
-// }
-
-// .login-form .button {
-//     width: 300px;
-//     box-sizing: border-box;
-//     margin-right: 0;
-//     background-color: #826550;
-//     color: #f8f3f0;
-// }
