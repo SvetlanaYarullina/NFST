@@ -62,3 +62,36 @@ svg {
   border: 0;
   clip: rect(0, 0, 0, 0);
 }
+
+.button {
+  display: block;
+  max-width: 288px;
+  padding: 16px 60px;
+  text-align: center;
+  background: $pink;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $white;
+
+  @include min-tablet {
+    max-width: 310px;
+    padding: 21px 47px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &--registration {
+    width: 100%;
+    max-width: 530px;
+    height: 63px;
+    margin-bottom: 20px;
+
+    @include min-tablet {
+      margin-bottom: 43px;
+    }
+  }
+}

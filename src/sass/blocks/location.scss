@@ -8,11 +8,11 @@
 
     &__wrapper {
         padding: 60px 0;
-    
+
         @include min-tablet {
             padding: 140px 0;
         }
-    } 
+    }
 
     &__bg-img {
         position: absolute;
@@ -20,58 +20,16 @@
         right: 0;
         z-index: -10;
 
+        
+
         @include min-tablet {
             bottom: 0;
-        }  
-    }
-}
-
-.location-section {
-    background: $white;
-    border-radius: 20px;
-
-    &__wrapper {
-        padding: 40px 17px;
-    
-        @include min-tablet {
-            display: flex;
-            justify-content: space-between;
-            padding: 63px 98px 61px 89px;
+        }
+        & img {
+            @include only-mobile {
+                display: none;
         }
     }
-
-    &__info {
-        @include min-tablet {
-            max-width: 497px;
-        }
+        
     }
-
-    &__text {
-        margin-bottom: 20px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-    
-        @include min-tablet {
-            margin-bottom: 27px;
-            font-size: 18px;
-            line-height: 25px;
-        }
-    }
-
-    &__button {
-        padding: 25px 43px 21px;
-    
-        @include min-tablet {
-            padding: 21px 47px;
-        }
-    }
-
-    &__slider {
-        @include only-mobile {
-            margin-top: 35px;
-        }
-    }
-    
 }
