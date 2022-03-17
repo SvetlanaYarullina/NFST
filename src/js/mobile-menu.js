@@ -1,7 +1,7 @@
 "use strict";
 
-var toggleMenu = document.querySelector('.menu__toggle');
-var menuBody = document.querySelector ('.menu__body');
+var toggleMenu = document.querySelector('[data-menu-toggle]');
+var menuBody = document.querySelector ('[data-menu-body]');
 if (toggleMenu) { 
     toggleMenu.addEventListener('click', function (e) {
         document.body.classList.toggle('__lock');

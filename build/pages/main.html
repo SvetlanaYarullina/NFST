@@ -19,11 +19,11 @@
                 </picture>
             </a>
             <div class="header__menu menu">
-                <button class="menu__toggle" type="button">
+                <button class="menu__toggle" type="button" data-menu-toggle>
                     <span class="visually-hidden">Открыть меню</span>
                     <span></span>
                 </button>
-                <nav class="menu__body">
+                <nav class="menu__body" data-menu-body>
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a href="tel:+7(812)4244647" class="menu__link">
@@ -36,7 +36,7 @@
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link menu__link--registration link-registration" href="login.html">
+                            <a class="menu__link menu__link--registration link-registration" href="login.html" data-link-registration>
                                 Зарегистроваться
                             </a>
                         </li>
@@ -404,8 +404,8 @@
             </g>
         </symbol>
     </svg>
-    <section class="modal--registration modal">
-        <div class="modal__wrapper">
+    <section class="modal--registration modal" data-modal-registration>
+        <div class="modal__wrapper" data-modal-wrapper>
             <div class="modal__content">
                 <h2 class="modal__title">Регистрация</h2>
                 <form class="form" action="#" method="post">
@@ -433,7 +433,7 @@
                         </div>
                     </div>
                 </form>
-                <button class="modal__close" type="button">
+                <button class="modal__close" type="button" data-modal-close>
                     <span class="visually-hidden">Закрыть</span>
                 </button>
             </div>
