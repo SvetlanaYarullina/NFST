@@ -33,7 +33,10 @@ document.addEventListener('keydown', function (evt) {
     document.body.classList.remove('__lock');
   }
 });
-modalCloseWrapper.addEventListener('click', function () {
-  modal.classList.remove('modal--show');
-  document.body.classList.remove('__lock');
+modalCloseWrapper.addEventListener('click', function (e) {
+  if (!e.target.closest('.modal__content')) {
+    console.log('Клик');
+    modal.classList.remove('modal--show');
+    document.body.classList.remove('__lock');
+  }
 });

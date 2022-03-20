@@ -27,21 +27,23 @@ modalLink.forEach(function (link) {
     document.body.classList.add('__lock');
   });
 });
+
 modalClose.addEventListener('click', function () {
   modal.classList.remove('modal--show');
   document.body.classList.remove('__lock');
 });
 
-
-
-document.addEventListener('keydown', function(evt) {
+document.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     modal.classList.remove('modal--show');
     document.body.classList.remove('__lock');
   }
 });
 
-modalCloseWrapper.addEventListener('click', function () {
-  modal.classList.remove('modal--show');
-  document.body.classList.remove('__lock');
+modalCloseWrapper.addEventListener('click', function (e) {
+  if (!e.target.closest('.modal__content')){
+    console.log('Клик');
+    modal.classList.remove('modal--show');
+    document.body.classList.remove('__lock');
+  } 
 });
