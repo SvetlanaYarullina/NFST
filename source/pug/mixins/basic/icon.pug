@@ -1,0 +1,11 @@
+//- example data {
+//-   name: string, (icon name in sprite)
+//-   width: number,
+//-   height: number,
+//- }
+
+mixin icon(data)
+  - const {name, width, height} = data;
+
+  svg(width=width, height=height, aria-hidden="true")&attributes(attributes)
+    use(xlink:href=`#${name}`)

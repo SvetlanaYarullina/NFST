@@ -1,0 +1,71 @@
+extends ../base/layout.pug
+
+block data
+  include ../data/header-banner.pug
+  include ../data/header.pug
+  include ../data/advantages.pug
+  include ../data/header-bg-img.pug
+  include ../data/location.pug
+  include ../data/prev-conferences.pug
+  include ../data/faq.pug
+
+
+block main
+  main.main
+    section.header-info
+      +headerBanner(headerBannerData)
+      +advantages(advantagesData)
+      +headerBgImg(headerBgData)
+
+    +location(locationData)
+    +prevConferences(prevConferencesData)
+    +faq(faqData)
+
+
+
+
+    //- section.section
+    //-   include ../data/main-page/hero.pug
+    //-   +hero(heroData)
+    //- section.section
+    //-   h1.title О нас
+    //-   include ../data/about/about.pug
+    //-   +content(aboutData)
+    //- section.section
+    //-   include ../data/main-page/current.pug
+    //-   +current(currentData)
+    //- section.section
+    //-   include ../data/main-page/app-block.pug
+    //-   +appBlock(appBlockData)
+
+//- extends ../base/layout.pug
+
+//- block data
+//-   include ../data/main-nav.pug
+
+//- block variables
+//-   -
+//-     const title = "Alrosa KSK | О нас";
+//-     const hasHeader = true;
+//-     const hasFooter = true;
+//-     const currentPage = ""; //- для остальных страниц пишем либо пустую строку, либо индекс
+//-     const pageDescription = 'Описание страницы'
+
+//- block nav
+//-   +main-nav(mainNav)
+
+//- block main
+//-   main
+//-     section.section
+//-       include ../data/main-page/hero.pug
+//-       +hero(heroData)
+//-     section.section
+//-       h1.title О нас
+//-       include ../data/about/about.pug
+//-       +content(aboutData)
+//-     section.section
+//-       include ../data/main-page/current.pug
+//-       +current(currentData)
+//-     section.section
+//-       include ../data/main-page/app-block.pug
+//-       +appBlock(appBlockData)

@@ -1,0 +1,34 @@
+//- example data {
+    title: string,
+    faqQuestion: string,
+    visuallyHiddenText: string,
+    faqAnswer: string,
+//- }
+
+mixin faq(data)
+    - const { title, faqQuestion, visuallyHiddenText, faqAnswer} = data;
+
+        section.faq
+            .faq__wrapper.container
+                h2.faq__title.title !{title}
+                .accordion
+                    .accordion__item
+                        .accordion__trigger(data-accordion-trigger) !{faqQuestion}
+                            span.visually-hidden !{visuallyHiddenText}
+                        .accordion__contentLorem !{faqAnswer}
+                    .accordion__item
+                        .accordion__trigger(data-accordion-trigger) !{faqQuestion}
+                            span.visually-hidden !{visuallyHiddenText}
+                        .accordion__contentLorem !{faqAnswer}
+                    .accordion__item
+                        .accordion__trigger(data-accordion-trigger) !{faqQuestion}
+                            span.visually-hidden !{visuallyHiddenText}
+                        .accordion__contentLorem !{faqAnswer}
+                    .accordion__item
+                        .accordion__trigger(data-accordion-trigger) !{faqQuestion}
+                            span.visually-hidden !{visuallyHiddenText}
+                        .accordion__contentLorem !{faqAnswer}
+                    .accordion__item
+                        .accordion__trigger(data-accordion-trigger) !{faqQuestion}
+                            span.visually-hidden !{visuallyHiddenText}
+                        .accordion__contentLorem !{faqAnswer}

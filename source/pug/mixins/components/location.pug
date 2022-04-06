@@ -1,0 +1,61 @@
+//- example data {
+    title: string,
+    text: string,
+    buttonText: string,
+    imageSet: string,
+    imageMobile: string,
+    imageMobileSet: string,
+    imageSetBg: string,
+    imageMobileBg: string,
+    imageMobileSetBg: string,
+//- }
+
+mixin location(data)
+    - const {title, text, buttonLink, imageSet, imageMobile, imageMobileSet, imageSetBg, imageMobileBg, imageMobileSetBg} = data;
+
+        section.location
+            .location__wrapper.container
+                h2.location__title.title !{title}
+                .location-section
+                    .location-section__wrapper
+                        .location-section__info
+                            .location-section__text !{text}
+                            a.location-section__button.button.link-registration(href=buttonLink) !{buttonText}
+                        .location-section__slider
+                            .location-section__swiper.swiper
+                                .location-section__swiper-wrapper.swiper-wrapper
+                                    .location-section__swiper-slide.swiper-slide
+                                        picture
+                                            source(media="(min-width: 1200px)" 
+                                                srcset=imageSet
+                                                type="image/webp")
+                                            img(src=imageMobile
+                                                srcset=imageMobileSet alt="location")
+                                    .location-section__swiper-slide.swiper-slide
+                                        picture
+                                            source(media="(min-width: 1200px)" 
+                                                srcset=imageSet
+                                                type="image/webp")
+                                            img(src=imageMobile
+                                                srcset=imageMobileSet alt="location")
+                                    .location-section__swiper-slide.swiper-slide
+                                        picture
+                                            source(media="(min-width: 1200px)" 
+                                                srcset=imageSet
+                                                type="image/webp")
+                                            img(src=imageMobile
+                                                srcset=imageMobileSet alt="location")
+                                    .location-section__swiper-slide.swiper-slide
+                                        picture
+                                            source(media="(min-width: 1200px)" 
+                                                srcset=imageSet
+                                                type="image/webp")
+                                            img(src=imageMobile
+                                                srcset=imageMobileSet alt="location")
+                                .location-section__swiper-pagination.swiper-pagination
+            a.location__bg-img
+                picture
+                    source(type="image/webp" media="(min-width: 1200px)" 
+                        srcset=imageSetBg)
+                    img(src=imageMobileBg srcset=imageMobileSetBg
+                        alt="bg") 
