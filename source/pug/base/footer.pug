@@ -10,60 +10,32 @@
 //- }
 
 mixin footer(data)
-  - const {copyText, socials} = data;
+    - const {logoDesktop, logoMobile, addres, socials, copyright, copyrightCompany, navItem } = data;
 
-  footer.footer 
-    .footer__wrapper.container
-      section.footer-contacts
-        .footer-contacts__logo
-          picture
-            source(media="(min-width: 1200px)" srcset="../images/logo-desktop.svg")
-            img(src="../images/logo-mobile.svg" width="100" height="32" alt="Logo NFST")
-        p.footer-contacts__adress Санкт-Петербург,<br> Краснопутиловская ул., 69
-        ul.footer-contacts__list
-          li.footer-contacts__item
-            a.footer-contacts__link.footer-contacts__link--instagram(href="javascript:void(0);")
-              svg(idth="31" height="31" aria-hidden="true")
-                use(xlink:href="#icon-instagram")
-              span.visually-hidden Мы&nbsp;в Инстаграме
-          li.footer-contacts__item
-            a.footer-contacts__link.footer-contacts__link--facebook(href="javascript:void(0);")
-              svg(idth="37" height="37" aria-hidden="true")
-                use(xlink:href="#icon-facebook")
-              span.visually-hidden Мы&nbsp;в Фейсбуке
-          li.footer-contacts__item
-            a.footer-contacts__link.footer-contacts__link--youtube(href="javascript:void(0);")
-              svg(idth="31" height="31" aria-hidden="true")
-                use(xlink:href="#icon-youtube")
-              span.visually-hidden Мы&nbsp;в Ютубе
-        .footer__copyright--desktop.footer__copyright Все права защищены<br>
-          span &copy;&nbsp;2019&nbsp;АНО &laquo;Интепром Стандарт&raquo;
-      section.footer__nav
-        ul.footer__list
-          li.footer__title Контакты
-          li.footer__item
-            a(href="tel:+7(812)4244647") +7 (812) 424 46 47
-          li.footer__item
-            a(href="mailto:info@gostonomica.ru") info@gostonomica.ru
-        ul.footer__list
-          li.footer__title Документы
-          li.footer__item
-            a(href="javascript:void(0);") Политика конфиденциальности
-          li.footer__item
-            a(href="javascript:void(0);") Документ &#8470;&nbsp;1
-          li.footer__item
-            a(href="javascript:void(0);") Документ &#8470;&nbsp;2
-        ul.footer__list
-          li.footer__title Навигация по&nbsp;сайту
-          li.footer__item
-            a(href="javascript:void(0);") О&nbsp;конференции
-          li.footer__item
-            a(href="javascript:void(0);") Программа
-          li.footer__item
-            a(href="javascript:void(0);") Спикеры
-          li.footer__item
-            a(href="javascript:void(0);") Партнеры
-          li.footer__item
-            a(href="javascript:void(0);") Стоимость
-        .footer__copyright--mobile.footer__copyright Все права защищены<br>
-          span &copy;&nbsp;2019&nbsp;АНО &laquo;Интепром Стандарт&raquo;
+        footer.footer 
+            .footer__wrapper.container
+                section.footer-contacts
+                    .footer-contacts__logo
+                        picture
+                            source(media="(min-width: 1200px)" srcset=logoDesktop)
+                            img(src=logoMobile width="100" height="32" alt="Logo NFST")
+                    p.footer-contacts__adress !{addres}
+                    ul.footer-contacts__list
+                        each item in socials
+                            li.footer-contacts__item
+                                a.footer-contacts__link.footer-contacts__link--instagram(href=item.link)
+                                    svg(width=item.width height=item.height aria-hidden="true")
+                                        use(xlink:href=item.name)
+                                    span.visually-hidden !{item.text}
+                    .footer__copyright--desktop.footer__copyright !{copyright}<br>
+                        span !{copyrightCompany}
+                section.footer__nav
+                    each items in navItem
+                        ul.footer__list
+                            li.footer__title !{items.title}
+                            li.footer__item
+                                a(href=items.itemOneLink) !{items.itemOneText}
+                            li.footer__item
+                                a(href=items.itemTwoText) !{items.itemTwoText}
+                    .footer__copyright--mobile.footer__copyright !{copyright}<br>
+                        span !{copyrightCompany}

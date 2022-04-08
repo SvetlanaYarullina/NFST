@@ -1,34 +1,18 @@
 //- example data {
-    title: string,
-    faqQuestion: string,
-    visuallyHiddenText: string,
-    faqAnswer: string,
-//- }
+//-     faqTitle: string,
+//-     faqQuestion: string,
+//-     visuallyHiddenText: string,
+//-     faqAnswer: string,
+//- };
 
 mixin faq(data)
-    - const { title, faqQuestion, visuallyHiddenText, faqAnswer} = data;
-
+    - const { faqTitle, faqItem } = data;
         section.faq
             .faq__wrapper.container
-                h2.faq__title.title !{title}
+                h2.faq__title.title !{faqTitle}
                 .accordion
-                    .accordion__item
-                        .accordion__trigger(data-accordion-trigger) !{faqQuestion}
-                            span.visually-hidden !{visuallyHiddenText}
-                        .accordion__contentLorem !{faqAnswer}
-                    .accordion__item
-                        .accordion__trigger(data-accordion-trigger) !{faqQuestion}
-                            span.visually-hidden !{visuallyHiddenText}
-                        .accordion__contentLorem !{faqAnswer}
-                    .accordion__item
-                        .accordion__trigger(data-accordion-trigger) !{faqQuestion}
-                            span.visually-hidden !{visuallyHiddenText}
-                        .accordion__contentLorem !{faqAnswer}
-                    .accordion__item
-                        .accordion__trigger(data-accordion-trigger) !{faqQuestion}
-                            span.visually-hidden !{visuallyHiddenText}
-                        .accordion__contentLorem !{faqAnswer}
-                    .accordion__item
-                        .accordion__trigger(data-accordion-trigger) !{faqQuestion}
-                            span.visually-hidden !{visuallyHiddenText}
-                        .accordion__contentLorem !{faqAnswer}
+                    each item in faqItem
+                        .accordion__item
+                            .accordion__trigger(data-accordion-trigger) !{item.faqQuestion}
+                                span.visually-hidden !{item.visuallyHiddenText}
+                            .accordion__contentLorem !{item.faqAnswer}

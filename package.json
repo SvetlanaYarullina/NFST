@@ -19,6 +19,7 @@
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.16.11",
+    "bootstrap": "^5.1.0",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.3",
     "browser-sync": "^2.27.7",
@@ -46,6 +47,7 @@
     "postcss-inline-svg": "^5.0.0",
     "postcss-object-fit-images": "^1.1.2",
     "sass": "^1.49.0",
+    "swiper": "^7.0.3",
     "webpack": "^5.67.0",
     "webpack-stream": "^7.0.0"
   }

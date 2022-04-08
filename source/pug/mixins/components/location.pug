@@ -11,7 +11,7 @@
 //- }
 
 mixin location(data)
-    - const {title, text, buttonLink, imageSet, imageMobile, imageMobileSet, imageSetBg, imageMobileBg, imageMobileSetBg} = data;
+    - const {title, text, buttonLink, buttonText, images, imageSetBg, imageMobileBg, imageMobileSetBg} = data;
 
         section.location
             .location__wrapper.container
@@ -25,33 +25,13 @@ mixin location(data)
                             .location-section__swiper.swiper
                                 .location-section__swiper-wrapper.swiper-wrapper
                                     .location-section__swiper-slide.swiper-slide
-                                        picture
-                                            source(media="(min-width: 1200px)" 
-                                                srcset=imageSet
-                                                type="image/webp")
-                                            img(src=imageMobile
-                                                srcset=imageMobileSet alt="location")
-                                    .location-section__swiper-slide.swiper-slide
-                                        picture
-                                            source(media="(min-width: 1200px)" 
-                                                srcset=imageSet
-                                                type="image/webp")
-                                            img(src=imageMobile
-                                                srcset=imageMobileSet alt="location")
-                                    .location-section__swiper-slide.swiper-slide
-                                        picture
-                                            source(media="(min-width: 1200px)" 
-                                                srcset=imageSet
-                                                type="image/webp")
-                                            img(src=imageMobile
-                                                srcset=imageMobileSet alt="location")
-                                    .location-section__swiper-slide.swiper-slide
-                                        picture
-                                            source(media="(min-width: 1200px)" 
-                                                srcset=imageSet
-                                                type="image/webp")
-                                            img(src=imageMobile
-                                                srcset=imageMobileSet alt="location")
+                                        each image in images
+                                            picture
+                                                source(media="(min-width: 1200px)" 
+                                                    srcset=image.set
+                                                    type="image/webp")
+                                                img(src=image.mobile
+                                                    srcset=image.mobileSet alt="location")
                                 .location-section__swiper-pagination.swiper-pagination
             a.location__bg-img
                 picture

@@ -1,7 +1,7 @@
 include mixins.pug
 include header.pug
-    include footer.pug
-include modal.pug
+include footer.pug
+//- include modal.pug
 
 block data
 
@@ -32,18 +32,24 @@ html(lang="ru")
       meta(http-equiv="X-UA-Compatible", content="ie=edge")
       meta(name="description", content= pageDescription)
       link(rel="stylesheet", href="css/style.min.css")
-      link(rel="preload" href="fonts/AvenirNextCyr-Medium.woff2" as="font" crossorigin="anonymous")
+      //- link(rel="stylesheet", href="css/swiper-bundle.min.css")
+      link(rel="stylesheet", href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+      link(rel="preload" href="fonts/Rubik-Medium.woff2" as="font" crossorigin="anonymous")
 
   body
     noscript У вас отключен JavaScript. Это пугает.
-    +sprite()
+    
     +header(headerData)
+    
     block main
     //+scrollUpBtn()
-
-    //+footer(footerData)
-
-    //block modals
+    +sprite()
+    +footer(footerData)
+    //- +modal(modalData)
+    //- block modals
 
   script(src="js/vendor.min.js")
   script(src="js/main.min.js")
+  //- script(src="js/swiper-bundle.min.js")
+  script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+  

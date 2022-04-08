@@ -1,0 +1,186 @@
+.footer {
+    margin-top: 60px;
+    margin-bottom: 63px;
+
+    @include min-tablet {
+        margin-top: 200px;
+        margin-bottom: 90px;
+    }
+
+    &__wrapper {
+        @include min-tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__nav {
+        @include only-mobile {
+            margin-top: 40px;
+        }
+
+        @include min-tablet {
+            display: flex;
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @include only-mobile {
+            margin-bottom: 24px;
+        }
+
+        @include min-tablet {
+            margin-right: 80px;
+        }
+
+        &:last-child {
+            @include only-mobile {
+                margin-bottom: 0;
+            }
+            @include min-tablet {
+                margin-right: 0;
+            }
+        }
+    }
+    &__title {
+        margin-bottom: 12px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 30px;
+        color: $white;
+
+        @include min-tablet {
+            margin-bottom: 24px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 12px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 30px;
+
+        & a {
+            color: $white;
+        }
+    }
+
+    &__copyright {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #f2f2ff;
+
+        & span {
+            font-weight: bold;
+        }
+
+        &--mobile {
+            margin-top: 43px;
+            @include min-tablet {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            margin-top: 27px;
+            @include only-mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+.footer-contacts {
+    &__logo {
+        display: block;
+        margin-bottom: 20px;
+
+        @include min-tablet {
+            margin-bottom: 26px;
+        }
+    }
+    &__adress {
+        margin-bottom: 20px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: $white;
+
+        @include min-tablet {
+            margin-bottom: 26px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+        list-style: none;
+
+        @include min-tablet {
+            margin-top: 23px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        margin-right: 30px;
+
+        @include min-tablet {
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 20px;
+
+            @include min-tablet {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__link {
+        &--instagram svg {
+            @include min-tablet {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        &--facebook svg {
+            @include min-tablet {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &--youtube svg {
+            @include min-tablet {
+                width: 19px;
+                height: 22px;
+            }
+        }
+    }
+}
