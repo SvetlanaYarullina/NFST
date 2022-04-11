@@ -11,12 +11,11 @@ $grid-breakpoints: (
 
 $container-max-widths: (
     xss: 0,
-    // xs: calc(100% - 32px),
-    xs: 540px,
+    xs: 100%,
     lg: 1170px,
 );
 
-$container-padding-x: 0;
+$container-padding-x: 16px;
 $grid-columns-lg: 12;
 $grid-columns-sm: 12;
 $grid-columns-xs: 2;

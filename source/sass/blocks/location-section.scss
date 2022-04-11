@@ -34,6 +34,10 @@
 
     &__button {
         padding: 25px 43px 21px;
+        
+        @include only-mobile {
+            margin: 0 auto;
+        }
 
         @include min-tablet {
             padding: 21px 47px;

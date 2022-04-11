@@ -9,7 +9,7 @@
     <meta name="format-detection" content="address=no">
     <meta name="format-detection" content="email=no">
     <meta content="notranslate" name="google">
-    <link rel="icon" type="image/png" sizes="69x69" href="favicons/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description">
     <link rel="stylesheet" href="css/style.min.css">
@@ -19,17 +19,17 @@
   <body>
     <noscript>У вас отключен JavaScript. Это пугает.</noscript>
     <header class="header">
-      <div class="header__container container"><a class="header__logo" href="javascript:void(0);"></a>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="../img/logo-desktop.svg"/><img src="../img/logo-mobile.svg" width="81" height="29" alt="Logo NFST"/>
-        </picture>
+      <div class="header__container container"><a class="header__logo" href="javascript:void(0);">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/logo-desktop.svg"/><img src="../img/logo-mobile.svg" width="81" height="29" alt="Logo NFST"/>
+          </picture></a>
         <div class="header__menu menu">
-          <button class="menu__toggle" type="button" data-menu-toggle="data-menu-toggle"> <span class="visually-hidden">Открыть меню<span></span></span></button>
+          <button class="menu__toggle" type="button" data-menu-toggle="data-menu-toggle"> <span class="visually-hidden">Открыть меню</span><span></span></button>
           <div class="menu__wrapper" data-menu-wrapper="data-menu-wrapper">    
             <nav class="menu__body" data-menu-body="data-menu-body"> 
               <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="tel:+7(812)4244647"></a></li>
-                <li class="menu__item"><a class="menu__link" href="info@gostonomica.ru"></a></li>
+                <li class="menu__item"><a class="menu__link" href="tel:+7(812)4244647"><span>(812)</span> 424 46 47</a></li>
+                <li class="menu__item"><a class="menu__link" href="info@gostonomica.ru"><span>info@</span>gostonomica.ru</a></li>
                 <li class="menu__item"><a class="menu__link menu__link--registration link-registration" href="javascript:void(0);" data-link-registration="data-link-registration">Зарегистроваться</a></li>
               </ul>
             </nav>
@@ -39,19 +39,17 @@
     </header>
     <main class="main">
       <section class="header-info">
-        <section class="header-info">
-          <section class="header-banner">
-            <div class="container header-banner__wrapper"><a class="header-banner__logo">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="../img/banner_img_mobile.webp"/><img src="../img/banner_img_mobile.webp" srcset="../img/banner_img_mobile@2x.webp 2x" alt="bg"/>
-                </picture></a>
-              <h2 class="header-banner__title">Научно-образовательная конференция по&nbsp;стандартизации и&nbsp;НСИ</h2>
-              <div class="header-banner__description">National forum of&nbsp;standards &amp;&nbsp;technology&rsquo;</div>
-              <div class="header-banner__datetime">
-                <div class="header-banner__date">14-15 сентября</div><span>10:00</span>
-              </div><a class="header-banner__button button link-registration" href="login.html">Зарегистрироваться</a>
-            </div>
-          </section>
+        <section class="header-banner">
+          <div class="container header-banner__wrapper"><a class="header-banner__logo">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="../img/banner_img_mobile.webp"/><img src="../img/banner_img_mobile.webp" srcset="../img/banner_img_mobile@2x.webp 2x" alt="bg"/>
+              </picture></a>
+            <h2 class="header-banner__title">Научно-образовательная конференция по&nbsp;стандартизации и&nbsp;НСИ</h2>
+            <div class="header-banner__description">National forum of&nbsp;standards &amp;&nbsp;technology&rsquo;</div>
+            <div class="header-banner__datetime">
+              <div class="header-banner__date">14-15 сентября</div><span>10:00</span>
+            </div><a class="header-banner__button button link-registration" href="login.html">Зарегистрироваться</a>
+          </div>
         </section>
         <section class="advantages">
           <div class="container advantages__wrapper">
@@ -60,22 +58,25 @@
               <div class="row">
                 <div class="advantages__item col-lg-4">
                   <div class="advantages__icon">
-                    <svg width="32" height="31" aria-hidden="true"></svg>
-                    <use xlink:href="#icon-connections"></use>
+                    <svg width="32" height="31" aria-hidden="true">
+                      <use xlink:href="#icon-connections"></use>
+                    </svg>
                   </div>
                   <div class="advantages__text">Обзавестись новыми<br> полезными связями</div>
                 </div>
                 <div class="advantages__item col-lg-4">
                   <div class="advantages__icon">
-                    <svg width="32" height="31" aria-hidden="true"></svg>
-                    <use xlink:href="#icon-screen"></use>
+                    <svg width="32" height="31" aria-hidden="true">
+                      <use xlink:href="#icon-screen"></use>
+                    </svg>
                   </div>
                   <div class="advantages__text">Разобраться что такое<br> цифровой стандарт</div>
                 </div>
                 <div class="advantages__item col-lg-4">
                   <div class="advantages__icon">
-                    <svg width="32" height="31" aria-hidden="true"></svg>
-                    <use xlink:href="#icon-target"></use>
+                    <svg width="32" height="31" aria-hidden="true">
+                      <use xlink:href="#icon-target"></use>
+                    </svg>
                   </div>
                   <div class="advantages__text">Узнать об&nbsp;интеграции стандартов<br> с&nbsp;производственными процессами</div>
                 </div>
@@ -83,22 +84,25 @@
               <div class="row">
                 <div class="advantages__item col-lg-4">
                   <div class="advantages__icon">
-                    <svg width="32" height="31" aria-hidden="true"></svg>
-                    <use xlink:href="#icon-technologies"></use>
+                    <svg width="32" height="31" aria-hidden="true">
+                      <use xlink:href="#icon-technologies"></use>
+                    </svg>
                   </div>
                   <div class="advantages__text">Ознакомиться с&nbsp;новыми<br> технологиями зарубежных<br> стандартизаторов</div>
                 </div>
                 <div class="advantages__item col-lg-4">
                   <div class="advantages__icon">
-                    <svg width="32" height="31" aria-hidden="true"></svg>
-                    <use xlink:href="#icon-presentation"></use>
+                    <svg width="32" height="31" aria-hidden="true">
+                      <use xlink:href="#icon-presentation"></use>
+                    </svg>
                   </div>
                   <div class="advantages__text">Увидеть цифровой<br> конструктор стандартов</div>
                 </div>
                 <div class="advantages__item col-lg-4">
                   <div class="advantages__icon">
-                    <svg width="32" height="31" aria-hidden="true"></svg>
-                    <use xlink:href="#icon-saving"></use>
+                    <svg width="32" height="31" aria-hidden="true">
+                      <use xlink:href="#icon-saving"></use>
+                    </svg>
                   </div>
                   <div class="advantages__text">Понять роль технологий в <br>&laquo;Бережливом производстве&raquo;</div>
                 </div>
@@ -127,12 +131,18 @@
                       <picture>
                         <source media="(min-width: 1200px)" srcset="../img/location_img_desktop.webp 1x, /src/images/location_img_desktop@2x.webp 2x" type="image/webp"/><img src="../img/location_img_mobile.webp" srcset="../img/location_img_mobile@2x.webp 2x" alt="location"/>
                       </picture>
+                    </div>
+                    <div class="location-section__swiper-slide swiper-slide">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="../img/location_img_desktop.webp 1x, /src/images/location_img_desktop@2x.webp 2x" type="image/webp"/><img src="../img/location_img_mobile.webp" srcset="../img/location_img_mobile@2x.webp 2x" alt="location"/>
                       </picture>
+                    </div>
+                    <div class="location-section__swiper-slide swiper-slide">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="../img/location_img_desktop.webp 1x, /src/images/location_img_desktop@2x.webp 2x" type="image/webp"/><img src="../img/location_img_mobile.webp" srcset="../img/location_img_mobile@2x.webp 2x" alt="location"/>
                       </picture>
+                    </div>
+                    <div class="location-section__swiper-slide swiper-slide">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="../img/location_img_desktop.webp 1x, /src/images/location_img_desktop@2x.webp 2x" type="image/webp"/><img src="../img/location_img_mobile.webp" srcset="../img/location_img_mobile@2x.webp 2x" alt="location"/>
                       </picture>
@@ -186,7 +196,59 @@
           <div class="prev-conferences__swiper-pagination swiper-pagination"></div>
         </div>
       </section>
+      <section class="faq">
+        <div class="faq__wrapper container">
+          <h2 class="faq__title title">FAQs</h2>
+          <div class="accordion">
+            <div class="accordion__item">
+              <div class="accordion__trigger" data-accordion-trigger="data-accordion-trigger">Все ли спикеры подтвердили участие?<span class="visually-hidden">Открыть-закрыть</span></div>
+              <div class="accordion__content">ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__trigger" data-accordion-trigger="data-accordion-trigger">Все ли спикеры подтвердили участие?<span class="visually-hidden">Открыть-закрыть</span></div>
+              <div class="accordion__content">ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__trigger" data-accordion-trigger="data-accordion-trigger">Все ли спикеры подтвердили участие?<span class="visually-hidden">Открыть-закрыть</span></div>
+              <div class="accordion__content">ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__trigger" data-accordion-trigger="data-accordion-trigger">Все ли спикеры подтвердили участие?<span class="visually-hidden">Открыть-закрыть</span></div>
+              <div class="accordion__content">ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__trigger" data-accordion-trigger="data-accordion-trigger">Все ли спикеры подтвердили участие?<span class="visually-hidden">Открыть-закрыть</span></div>
+              <div class="accordion__content">ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <section class="modal--registration modal" data-modal-registration="data-modal-registration">
+      <div class="modal__wrapper" data-modal-wrapper="data-modal-wrapper">
+        <div class="modal__content">
+          <h2 class="modal__title">Регистрация</h2>
+          <form class="form" action="#" method="post">
+            <div class="form__field form__field--input">
+              <label class="visually-hidden" for="contacts-name">Ваше имя</label>
+              <input class="form__input" type="text" name="Name" id="contacts-name" placeholder="Ваш телефон" required="required"/>
+            </div>
+            <div class="form__field form__field--input">
+              <label class="visually-hidden" for="contacts-phone">Ваше имя</label>
+              <input class="form__input" type="tel" name="phone" id="contacts-phone" placeholder="+7 (123) 456 78 90" required="required"/>
+            </div>
+            <button class="button--registration button" type="submit"><span>Отправить</span></button>
+            <div class="form__consent">
+              <div class="form__field form__field--checkbox">
+                <input class="form__checkbox" type="checkbox" id="contacts-consent" name="contacts-consent" required="required"/>
+                <label for="contacts-consent"><span class="form__consent-text">Нажимая кнопку, Вы&nbsp;принимаете условия политики конфиденциальности персональной информации</span></label>
+              </div>
+            </div>
+          </form>
+          <button class="modal__close" type="button" data-modal-close="data-modal-close"><span class="visually-hidden">Закрыть</span></button>
+        </div>
+      </div>
+    </section>
     <!--+scrollUpBtn()-->
     <div style="display:none"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-connections" viewBox="0 0 58 55"><g fill="none">
 <path d="M37.8001 48.3893H35.9355C34.7722 48.3893 33.6565 47.7701 32.834 46.6678C32.0114 45.5656 31.5493 44.0707 31.5493 42.5119V13.0315C31.5493 11.4728 32.0114 9.97783 32.834 8.87561C33.6565 7.77339 34.7722 7.15417 35.9355 7.15417H37.8001" stroke="#F6255A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -293,7 +355,6 @@
       </div>
     </footer>
   </body>
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
 </html>

@@ -17,23 +17,25 @@
 
     &__swiper-button-next,
     &__swiper-button-prev {
-        display: none;
+        @include only-mobile {
+            display: none!important;
+        }
         @include min-tablet {
             display: block;
-            top: 175px;
-            width: 61px;
-            height: 61px;
+            top: 175px!important;
+            width: 61px!important;
+            height: 61px!important;
 
             &:after {
-                content: "";
+                content: ""!important;
             }
         }
     }
 
     @include min-tablet {
         &__swiper-button-prev {
-            right: 112px;
-            left: auto;
+            right: 112px!important;
+            left: auto!important;
             background-image: url("../img/swiper-arrow-prev.svg");
         }
 

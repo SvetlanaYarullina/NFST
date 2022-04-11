@@ -11,17 +11,16 @@
 //- }
 
 mixin headerBanner(data)
-  - const { imageSet, imageUrlMobile, imageSetMobile, title, description, bannerDate, bannerTime, buttonText, buttonLink } = data;
+    - const { imageSet, imageUrlMobile, imageSetMobile, title, description, bannerDate, bannerTime, buttonText, buttonLink } = data;
 
-      section.header-info
         section.header-banner
             .container.header-banner__wrapper
                 a.header-banner__logo
                     picture
-                        source(type="image/webp" media="(min-width: 1200px)"
-                                srcset=imageUrlMobile)
+                        source(type="image/webp" media="(min-width: 1200px)" 
+                            srcset=imageUrlMobile)
                         img(src=imageUrlMobile
-                                srcset=imageSetMobile alt="bg")
+                            srcset=imageSetMobile alt="bg")
                 h2.header-banner__title !{title}
                 .header-banner__description !{description}
                 .header-banner__datetime

@@ -11,7 +11,7 @@
 //- }
 
 mixin location(data)
-    - const {title, text, buttonLink, buttonText, images, imageSetBg, imageMobileBg, imageMobileSetBg} = data;
+    - const {title, text, buttonLink, buttonText, imagesList, imageSetBg, imageMobileBg, imageMobileSetBg} = data;
 
         section.location
             .location__wrapper.container
@@ -24,8 +24,8 @@ mixin location(data)
                         .location-section__slider
                             .location-section__swiper.swiper
                                 .location-section__swiper-wrapper.swiper-wrapper
-                                    .location-section__swiper-slide.swiper-slide
-                                        each image in images
+                                    each image in imagesList
+                                        .location-section__swiper-slide.swiper-slide
                                             picture
                                                 source(media="(min-width: 1200px)" 
                                                     srcset=image.set

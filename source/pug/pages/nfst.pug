@@ -8,8 +8,9 @@ block data
   include ../data/header-bg-img.pug
   include ../data/location.pug
   include ../data/prev-conferences.pug
-  //- include ../data/modalForm.pug
-  //- include ../data/faq.pug
+  include ../data/faq.pug
+  include ../data/modalForm.pug
+
  
 
 
@@ -21,5 +22,5 @@ block main
       +headerBgImg(headerBgData)
     +location(locationData)
     +prevConferences(prevConferencesData)
-    //- +faq(faqData)
-  //- +modalForm(modalFormData)   
+    +faq(faqData)
+  +modalForm(modalFormData)   

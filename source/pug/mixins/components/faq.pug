@@ -6,13 +6,13 @@
 //- };
 
 mixin faq(data)
-    - const { faqTitle, faqItem } = data;
+    - const { faqTitle, faqList } = data;
         section.faq
             .faq__wrapper.container
                 h2.faq__title.title !{faqTitle}
                 .accordion
-                    each item in faqItem
+                    each item in faqList
                         .accordion__item
                             .accordion__trigger(data-accordion-trigger) !{item.faqQuestion}
                                 span.visually-hidden !{item.visuallyHiddenText}
-                            .accordion__contentLorem !{item.faqAnswer}
+                            .accordion__content !{item.faqAnswer}

@@ -26,13 +26,13 @@ mixin advantages(data)
                             .advantages__item.col-lg-4
                                 .advantages__icon
                                     svg(width="32" height="31" aria-hidden="true")
-                                    use(xlink:href=item.iconImageFirstRow)
+                                        use(xlink:href=item.iconImageFirstRow)
                                 .advantages__text !{item.iconTextFirstRow}
                     .row
                         each items in itemSecondRow  
                             .advantages__item.col-lg-4
                                 .advantages__icon
                                     svg(width="32" height="31" aria-hidden="true")
-                                    use(xlink:href=items.iconImageSecondRow)
+                                        use(xlink:href=items.iconImageSecondRow)
                                 .advantages__text !{items.iconTextSecondRow}
         
