@@ -28,36 +28,3 @@
 
 @import "vendor/normalize";
 // @import "vendorswiper-bundle.min/.css";
-
-
-// // Global
-// //---------------------------------
-
-// @import "variables/variables.scss";
-
-// @import "mixins.scss";
-
-// // @import "global/fonts";
-// // @import "global/reboot";
-// // @import "global/utils";
-// // @import "global/animations.scss";
-// // @import "global/container";
-
-
-// // Components
-// //---------------------------------
-
-// @import "components/**/*.scss";
-
-
-// // используйте это для отключения ховеров на тач устройствах
-// // ! но не используйте это для текстовых полей ( input, textarea )
-// // также для любых transition обязательно указывайте transition-property
-// // transition: color $default-transition-settings, а не transition: $default-transition-settings
-
-// // @media (hover: hover), screen and (min-width: 0\0) {
-// //   &:hover,
-// //   &:focus {
-// //     color: red;
-// //   }
-// // }

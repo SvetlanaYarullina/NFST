@@ -3410,7 +3410,8 @@ svg {
   }
 }
 .location__wrapper {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .location__wrapper {
