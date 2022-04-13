@@ -1,0 +1,38 @@
+//- -
+//-   const advantagesData = {
+//-     iconTextOne: string,
+//-     iconImageOne: string,
+//-     iconTextTwo: string,
+//-     iconImageTwo: string,
+//-     iconTextThree: string,
+//-     iconImageThree: string,
+//-     iconTextFour: string,
+//-     iconImageFour: string,
+//-     iconTextFive: string,
+//-     iconImageFive: string,
+//-     iconTextSix: string,
+//-     iconImageSix: string,
+//-   };
+  
+mixin advantages(data)
+  - const {itemFirstRow, itemSecondRow} = data;      
+       
+        section.advantages
+            .container.advantages__wrapper
+                h2.title.advantages__title
+                .advantages__list
+                    .row
+                        each item in itemFirstRow   
+                            .advantages__item.col-lg-4
+                                .advantages__icon
+                                    svg(width="32" height="31" aria-hidden="true")
+                                        use(xlink:href=item.iconImageFirstRow)
+                                .advantages__text !{item.iconTextFirstRow}
+                    .row
+                        each items in itemSecondRow  
+                            .advantages__item.col-lg-4
+                                .advantages__icon
+                                    svg(width="32" height="31" aria-hidden="true")
+                                        use(xlink:href=items.iconImageSecondRow)
+                                .advantages__text !{items.iconTextSecondRow}
+        

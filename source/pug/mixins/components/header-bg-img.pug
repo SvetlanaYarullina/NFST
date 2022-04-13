@@ -1,0 +1,14 @@
+//- example data {
+    imageSet: string,
+    imageMobile: string,
+    imageMobile2x: string,
+//- }
+
+mixin headerBgImg(data)
+    - const {imageSet, imageMobile, imageMobile2x} = data;
+
+        .header-info__bg-img
+            picture
+                source(type="image/webp" media="(min-width: 1200px)" 
+                    srcset=imageSet)
+                img(src=imageMobile srcset=imageMobile2x alt="bg")      

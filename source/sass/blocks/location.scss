@@ -1,0 +1,36 @@
+.location {
+    position: relative;
+    margin-top: 42px;
+
+    @include min-tablet {
+        margin-top: 50px;
+    }
+
+    &__wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        @include min-tablet {
+            padding: 140px 0;
+        }
+    }
+
+    &__bg-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -10;
+
+        
+
+        @include min-tablet {
+            bottom: 0;
+        }
+        & img {
+            @include only-mobile {
+                display: none;
+        }
+    }
+        
+    }
+}

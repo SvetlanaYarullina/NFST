@@ -1,0 +1,29 @@
+//- example data {
+//-     imageSet: string,
+//-     imageUrlMobile: string,
+//-     imageSetMobile: string,
+//-     title: string,
+//-     description: string,
+//-     bannerDate: string,
+//-     bannerTime: string,
+//-     buttonText: string,    
+//-     buttonLink: string,
+//- }
+
+mixin headerBanner(data)
+    - const { imageSet, imageUrlMobile, imageSetMobile, title, description, bannerDate, bannerTime, buttonText, buttonLink } = data;
+
+        section.header-banner
+            .container.header-banner__wrapper
+                a.header-banner__logo
+                    picture
+                        source(type="image/webp" media="(min-width: 1200px)" 
+                            srcset=imageUrlMobile)
+                        img(src=imageUrlMobile
+                            srcset=imageSetMobile alt="bg")
+                h2.header-banner__title !{title}
+                .header-banner__description !{description}
+                .header-banner__datetime
+                    .header-banner__date !{bannerDate}
+                    span !{bannerTime}
+                a.header-banner__button.button.link-registration(href=buttonLink) !{buttonText}

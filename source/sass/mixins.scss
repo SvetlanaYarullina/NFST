@@ -1,0 +1,17 @@
+// @import "mixins/media-mixins.scss";
+// @import "mixins/util-mixins.scss";
+// @import "mixins/mixins";
+
+// mobile first
+@mixin min-tablet {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+  
+  @mixin only-mobile {
+    @media screen and (max-width: $only-mobile) {
+      @content;
+    }
+  }
+  

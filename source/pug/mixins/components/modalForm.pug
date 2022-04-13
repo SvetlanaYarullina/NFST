@@ -1,0 +1,40 @@
+//- example data {
+    title: string,
+        inputNameText: string,
+        inputNamePlaceholder: string,
+        inputPhoneText: string,
+        inputPhonePlaceholder: string,   
+        buttonText: string,
+        consent: string,
+        visuallyHiddenText: string,   
+//- }
+
+mixin modalForm(data)
+    - const { title, inputNameText, inputNamePlaceholder, inputPhoneText, inputPhonePlaceholder, buttonText, consent, visuallyHiddenText } = data;
+
+        section.modal--registration.modal(data-modal-registration)
+            .modal__wrapper(data-modal-wrapper)
+                .modal__content
+                    h2.modal__title !{title}
+                    form.form(action="#" method="post")
+                        .form__field.form__field--input
+                            label.visually-hidden(for="contacts-name") !{inputNameText}
+                            input.form__input(type="text" name="Name" id="contacts-name" placeholder=inputPhoneText required)
+                        .form__field.form__field--input
+                            label.visually-hidden(for="contacts-phone") !{inputNameText}
+                            input.form__input(type="tel" name="phone" id="contacts-phone" placeholder=inputPhonePlaceholder required)
+                        button.button--registration.button(type="submit")
+                            span !{buttonText}
+                        .form__consent
+                            .form__field.form__field--checkbox
+                                input.form__checkbox(type="checkbox" id="contacts-consent" name="contacts-consent" required="required")
+                                label(for="contacts-consent")
+                                    span.form__consent-text !{consent}
+                    button.modal__close(type="button" data-modal-close)
+                        span.visually-hidden !{visuallyHiddenText}
+
+
+
+
+
+

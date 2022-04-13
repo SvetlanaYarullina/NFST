@@ -1,0 +1,41 @@
+//- example data {
+//-   copyText: string,
+//-   socials: [
+//-     {
+//-       icon: iconObj,
+//-       label: string,
+//-       link: string,
+//-     },
+//-   ],
+//- }
+
+mixin footer(data)
+    - const {logoDesktop, logoMobile, addres, socials, copyright, copyrightCompany, navItem } = data;
+
+        footer.footer 
+            .footer__wrapper.container
+                section.footer-contacts
+                    .footer-contacts__logo
+                        picture
+                            source(media="(min-width: 1200px)" srcset=logoDesktop)
+                            img(src=logoMobile width="100" height="32" alt="Logo NFST")
+                    p.footer-contacts__adress !{addres}
+                    ul.footer-contacts__list
+                        each item in socials
+                            li.footer-contacts__item
+                                a.footer-contacts__link.footer-contacts__link--instagram(href=item.link)
+                                    svg(width=item.width height=item.height aria-hidden="true")
+                                        use(xlink:href=item.name)
+                                    span.visually-hidden !{item.text}
+                    .footer__copyright--desktop.footer__copyright !{copyright}<br>
+                        span !{copyrightCompany}
+                section.footer__nav
+                    each items in navItem
+                        ul.footer__list
+                            li.footer__title !{items.title}
+                            li.footer__item
+                                a(href=items.itemOneLink) !{items.itemOneText}
+                            li.footer__item
+                                a(href=items.itemTwoText) !{items.itemTwoText}
+                    .footer__copyright--mobile.footer__copyright !{copyright}<br>
+                        span !{copyrightCompany}

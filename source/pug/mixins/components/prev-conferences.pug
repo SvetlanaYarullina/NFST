@@ -1,0 +1,28 @@
+//- example data {
+//-     title: string,
+    subtitle: string,
+    imageSet: string,
+    imageUrlMobile: string,
+    imageSetMobile: string, 
+//- }
+
+mixin prevConferences(data)
+    - const { title, subtitle, imagesList } = data;
+
+        section.prev-conferences
+            .prev-conferences__wrapper.container
+                h2.prev-conferences__title.title !{title}
+                .prev-conferences__subtitle !{subtitle}
+                .prev-conferences__swiper-button-prev.swiper-button-prev
+                .prev-conferences__swiper-button-next.swiper-button-next
+            .prev-conferences__swiper.swiper
+                .prev-conferences__swiper-wrapper.swiper-wrapper 
+                    each images in imagesList
+                        .prev-conferences__swiper-slide.swiper-slide
+                            picture
+                                source(media="(min-width: 1200px)" 
+                                    srcset=images.imageSet
+                                    type="image/webp")
+                                img(src=images.imageUrlMobile
+                                    srcset=images.imageSetMobile alt="location")
+                .prev-conferences__swiper-pagination.swiper-pagination

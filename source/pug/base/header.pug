@@ -1,0 +1,43 @@
+//- example data {
+//-     linkPlug: string,
+//-     imageUrlMobile: string,
+//-     imageSetMobile: string,
+//-     visuallyHiddenText: string,
+//-     number: string,
+//-     email: string,
+//-     buttonText: string,    
+//- }
+//- -
+//-     const headerData = {
+//-         linkPlug: "javascript:void(0);",
+//-         imageUrlMobile: "../img/logo-mobile.svg",
+//-         imageSetMobile: "../img/logo-desktop.svg",
+//-         visuallyHiddenText: "Открыть меню",
+//-         number: "<span>(812)</span> 424 46 47",
+//-         email: "<span>info@</span>gostonomica.ru",
+//-         buttonText: "Зарегистрироваться",
+//-     };
+
+mixin header(data)
+  - const { linkPlug, imageUrlMobile, imageSetMobile, visuallyHiddenText, numberLink, numberText, emailLink, emailText, buttonText} = data;
+
+    header.header
+      .header__container.container
+        a.header__logo(href=linkPlug)
+          picture
+            source(media="(min-width: 1200px)" srcset=imageSetMobile)
+            img(src=imageUrlMobile width="81" height="29" alt="Logo NFST")
+        .header__menu.menu
+          button.menu__toggle(type="button", data-menu-toggle) 
+            span.visually-hidden !{visuallyHiddenText}
+            span
+          .menu__wrapper(data-menu-wrapper)     
+            nav.menu__body(data-menu-body)  
+              ul.menu__list
+                li.menu__item
+                  a.menu__link(href=numberLink) !{numberText}
+                li.menu__item
+                  a.menu__link(href=emailLink) !{emailText}
+                li.menu__item
+                  a.menu__link.menu__link--registration.link-registration(href=linkPlug, data-link-registration) Зарегистроваться
+
